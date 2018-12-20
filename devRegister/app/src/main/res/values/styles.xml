@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">    @color/colorPrimary     </item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark </item>
+        <item name="colorAccent">     @color/colorAccent      </item>
+    </style>
+
+
+    <style name="button_default">
+        <item name="android:textColor">     @android:color/white</item>
+        <item name="android:background">    @color/blue_strong</item>
+
+        <item name="android:gravity">       center</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:layout_height"> 50dp</item>
+    </style>
+
+
+    <style name="edit_text_default">
+        <item name="android:background">@drawable/border_edittext</item>
+        <item name="android:gravity">center</item>
+
+        <item name="android:layout_height">      50dp</item>
+        <item name="android:layout_marginTop">    5dp</item>
+        <item name="android:layout_marginBottom"> 5dp</item>
+    </style>
+
+    <style name="edit_text_error" parent="edit_text_default">
+        <item name="android:background">@drawable/border_edittext_error</item>
+    </style>
+
+
+    <!-- about the container of every activity -->
+    <style name="containers">
+        <item name="android:layout_width">  match_parent</item>
+        <item name="android:layout_height"> match_parent</item>
+        <item name="android:background">    @color/blue_weak</item>
+        <item name="android:id">@+id/container</item>
+    </style>
+
+    <style name="text_view_title">
+        <item name="android:gravity">       center</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textColor">     @color/blue_strong</item>
+    </style>
+
+</resources>

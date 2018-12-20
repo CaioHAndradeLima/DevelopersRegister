@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.systemtechnology.devregister">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:name=".application.ApplicationDevRegister"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+
+
+        <meta-data
+                android:name="DATABASE"
+                android:value="DevRegisterDataBase.db" />
+        <meta-data
+                android:name="VERSION"
+                android:value="1" />
+        <meta-data
+                android:name="QUERY_LOG"
+                android:value="false" />
+        <meta-data
+                android:name="DOMAIN_PACKAGE_NAME"
+                android:value="com.systemtechnology.devregister" />
+
+
+        <activity android:name=".activities.main_activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".activities.get_address_by_cep.GetAddressByCepActivity"/>
+        <activity android:name=".activities.update_or_register_activity.UpdateOrRegisterActivity"/>
+        <activity android:name=".activities.address_confirm.AddressConfirmActivity"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">design</string>
+
+    <string name="component_chp_tap_message">Toque para inserir a imagem</string>
+</resources>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">DevRegister</string>
+
+    <string name="form_cep_not_found">           CEP não encontrado</string>
+    <string name="form_cep_incorrect">           Preencha o CEP inteiro</string>
+    <string name="form_cep_error_number_street"> Digite o número da residência</string>
+    <string name="form_client_error_name">       Digite o nome inteiro corretamente</string>
+    <string name="form_client_error_cpf">        Digite o CPF corretamente</string>
+    <string name="form_client_error_address">    Informe o endereço</string>
+
+
+    <string name="update_register_inserting_title">Cadastre um novo desenvolvedor preenchendo os campos abaixo</string>
+    <string name="update_register_inserting_photo">Adicionar Endereço</string>
+    <string name="update_register_inserting_button">Adicionar</string>
+
+    <string name="update_register_updating_title">Atualize aqui seus desenvolvedores sempre que precisar</string>
+    <string name="update_register_updating_photo">Modificar Endereço</string>
+    <string name="update_register_updating_button">Atualizar</string>
+    <string name="activity_address_confirm_title">Agora precisamos apenas confirmar o número de sua residência e
+        complementos
+    </string>
+    <string name="activity_address_confirm_hint_1">Rua</string>
+    <string name="activity_address_confirm_hint_2">Número</string>
+    <string name="activity_address_confirm_hint_3">Complemento</string>
+    <string name="activity_address_confirm_button">Confirmar Endereço</string>
+    <string name="activity_get_address_cep_title">CEP</string>
+    <string name="activity_update_or_register_hint_1">Nome Completo</string>
+    <string name="activity_update_or_register_hint_2">CPF</string>
+    <string name="holder_none_clients_yet_title">Cadastre seu primeiro desenvolvedor para começar!</string>
+
+</resources>
