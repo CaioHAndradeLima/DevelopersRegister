@@ -3,6 +3,7 @@ package com.systemtechnology.devregister.define_rules
 import android.os.Bundle
 import android.support.annotation.LayoutRes
 import android.support.design.widget.Snackbar
+import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import com.systemtechnology.devregister.R
 import com.systemtechnology.devregister.define_rules.adapter.AdapterDependency
@@ -16,7 +17,7 @@ abstract class RulesBaseActivity : AppCompatActivity(),
     /**
      * the presenter that management view
      */
-    lateinit var presenter: PresenterAny
+    lateinit var presenter: AnyPresenter
 
     /**
      * here decides what the actions needed be called in every activity
@@ -85,6 +86,10 @@ abstract class RulesBaseActivity : AppCompatActivity(),
         return UtilsConvertJson.fromJson( json , obj )
     }
 
+    protected fun getColorCompat( color : Int ) : Int {
+        return ContextCompat.getColor( this , color )
+    }
+
 }
 
 /**
@@ -121,7 +126,7 @@ interface ActivityMethods {
      * @version 1
      * @since 1
      */
-    fun getInstancePresenter(): PresenterAny
+    fun getInstancePresenter(): AnyPresenter
 
     /**
      * set the settings on layout when exists

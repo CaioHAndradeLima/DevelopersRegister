@@ -5,9 +5,9 @@ import android.support.v4.content.LocalBroadcastManager
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import com.systemtechnology.devregister.entity.Address
+import com.systemtechnology.devregister.entity.AddressEntity
 import com.systemtechnology.devregister.R
-import com.systemtechnology.devregister.define_rules.PresenterAny
+import com.systemtechnology.devregister.define_rules.AnyPresenter
 import com.systemtechnology.devregister.define_rules.RulesBaseActivity
 
 class AddressConfirmActivity : AddressConfirmActivityView(), AddressConfirmMethods {
@@ -23,7 +23,7 @@ class AddressConfirmActivity : AddressConfirmActivityView(), AddressConfirmMetho
     override fun sendBroadcastAddress() {
         val it = Intent( ACTION_ADDRESS_COMPLETED )
 
-        it.putExtra( EXTRA_ADDRESS , toJson( address ) )
+        it.putExtra( EXTRA_ADDRESS , toJson( addressEntity ) )
 
         LocalBroadcastManager
             .getInstance( this )
@@ -32,7 +32,7 @@ class AddressConfirmActivity : AddressConfirmActivityView(), AddressConfirmMetho
         finish()
     }
 
-    override fun getInstancePresenter(): PresenterAny {
+    override fun getInstancePresenter(): AnyPresenter {
         return AddressConfirmPresenter( this )
     }
 }
@@ -50,7 +50,7 @@ abstract class AddressConfirmActivityView : RulesBaseActivity(), View.OnClickLis
 
     private lateinit var button             : Button
 
-    protected lateinit var address          : Address
+    protected lateinit var addressEntity          : AddressEntity
 
 
     override fun getLayoutResActivity(): Int {
@@ -67,7 +67,7 @@ abstract class AddressConfirmActivityView : RulesBaseActivity(), View.OnClickLis
     override fun setSettingsIfExists() {
         val json = intent.getStringExtra( EXTRA_ADDRESS )
 
-        address = fromJson( json , Address::class.java )
+        addressEntity = fromJson( json , AddressEntity::class.java )
 
         toLayout()
 
@@ -82,14 +82,14 @@ abstract class AddressConfirmActivityView : RulesBaseActivity(), View.OnClickLis
             .whenClickedConfirm(
                 getNumberHome()     ,
                 getComplementary()  ,
-                address     )
+                addressEntity     )
     }
 
     private fun toLayout(){
 
-        edtStreet.setText( "${address.street}, ${address.city}" )
-        edtHomeNumber.setText(      address.houseNumber     )
-        edtComplementary.setText(   address.complementary   )
+        edtStreet.setText( "${addressEntity.street}, ${addressEntity.city}" )
+        edtHomeNumber.setText(      addressEntity.houseNumber     )
+        edtComplementary.setText(   addressEntity.complementary   )
     }
 
     private fun getNumberHome(): String {

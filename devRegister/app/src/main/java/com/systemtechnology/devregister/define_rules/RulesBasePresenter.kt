@@ -13,7 +13,7 @@ import io.reactivex.disposables.Disposable
  * @date 18/10/2018
  *
  */
-abstract class RulesBasePresenter(protected val activityMethods: ActivityMethods) : PresenterAny {
+abstract class RulesBasePresenter(protected val activityMethods: ActivityMethods) : AnyPresenter {
 
     @Volatile
     private var alreadyDestroyed = false
@@ -46,7 +46,7 @@ abstract class RulesBasePresenter(protected val activityMethods: ActivityMethods
      */
     @Synchronized
     protected fun clearDisposables() {
-        if( listDisposable != null && listDisposable.size > 0 ) {
+        if( listDisposable.isNotEmpty() ) {
             for (disposable in listDisposable) {
                 if( !disposable.isDisposed )  disposable.dispose()
             }
@@ -62,7 +62,7 @@ abstract class RulesBasePresenter(protected val activityMethods: ActivityMethods
      * @since 1
      * @version 1
      */
-    protected fun addDisposable(dis : Disposable) {
+    override fun addDisposable(dis : Disposable) {
         listDisposable.add( dis )
 
         if( alreadyDestroyed ) {
@@ -80,7 +80,6 @@ abstract class RulesBasePresenter(protected val activityMethods: ActivityMethods
         listDisposable.remove( dis )
     }
 
-
 }
 
 /**
@@ -94,7 +93,7 @@ abstract class RulesBasePresenter(protected val activityMethods: ActivityMethods
  * @since 1
  *
  */
-interface PresenterAny {
+interface AnyPresenter {
 
     /**
      * when activity was created
@@ -113,4 +112,14 @@ interface PresenterAny {
      * @since 1
      */
     fun onDestroy()
+
+    /**
+     *
+     * add the disposable, this object can disable a observable listener subscribe
+     *
+     * @author Caio
+     * @version 1
+     * @since 1
+     */
+    fun addDisposable(dis : Disposable)
 }

@@ -1,7 +1,10 @@
 package com.systemtechnology.devregister.define_rules.adapter
 
+import android.content.Context
+import android.content.res.Resources
 import android.support.v7.widget.RecyclerView
 import android.view.View
+
 import com.systemtechnology.devregister.define_rules.RulesBaseActivity
 import com.systemtechnology.devregister.utils.DoubleClick
 
@@ -18,6 +21,8 @@ abstract class RulesHolderAdapter(view : View) : RecyclerView.ViewHolder( view )
         setSettingsWhenExists()
     }
 
+    protected fun getContext() : Context = itemView.context
+
     protected val doubleClick : DoubleClick
         get() { return (itemView.context as RulesBaseActivity).doubleClick!! }
 
@@ -26,6 +31,10 @@ abstract class RulesHolderAdapter(view : View) : RecyclerView.ViewHolder( view )
     }
 
     override fun setSettingsWhenExists() {  }
+
+    protected fun getString( id : Int ) : String = getContext().getString( id )
+
+    protected fun getResources() : Resources = getContext().getResources()
 
 }
 

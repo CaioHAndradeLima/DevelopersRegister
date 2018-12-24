@@ -1,21 +1,21 @@
 package com.systemtechnology.devregister.model
 
 import com.systemtechnology.devregister.define_rules.RulesBaseModel
-import com.systemtechnology.devregister.entity.Address
-import com.systemtechnology.devregister.entity.Developer
+import com.systemtechnology.devregister.entity.AddressEntity
+import com.systemtechnology.devregister.entity.DeveloperEntity
 
 class ModelDeveloper : RulesBaseModel() {
 
-    fun getAllDevelopers() : MutableList<Developer>? {
-        val list = Developer.getAllDevelopers() ?: return null
+    fun getAllDevelopers() : MutableList<DeveloperEntity>? {
+        val list = DeveloperEntity.getAllDevelopers() ?: return null
 
-        val listAddress = Address.getAllAddress()!!
+        val listAddress = AddressEntity.getAllAddress()!!
 
         list.forEach { client ->
 
             for( address in listAddress){
                 if(address.id == client.id) {
-                    client.address = address
+                    client.addressEntity = address
                     continue
                 }
             }

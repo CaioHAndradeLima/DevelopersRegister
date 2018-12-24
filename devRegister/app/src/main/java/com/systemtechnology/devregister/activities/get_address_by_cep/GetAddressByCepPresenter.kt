@@ -3,7 +3,7 @@ package com.systemtechnology.devregister.activities.get_address_by_cep
 import com.systemtechnology.devregister.R
 import com.systemtechnology.devregister.define_rules.ActivityMethods
 import com.systemtechnology.devregister.define_rules.RulesBasePresenter
-import com.systemtechnology.devregister.entity.Address
+import com.systemtechnology.devregister.entity.AddressEntity
 import com.systemtechnology.devregister.model.ModelVivaCepApi
 import com.systemtechnology.devregister.model.VivaCepListener
 import io.reactivex.Observable
@@ -14,8 +14,8 @@ class GetAddressByCepPresenter(activityMethods: ActivityMethods) : RulesBasePres
     private val modelVivaCepApi = ModelVivaCepApi( this )
 
 
-    override fun whenSearchAddressByCepCompleted(address: Address) {
-        getView().whenAddressArrived( address )
+    override fun whenSearchAddressByCepCompleted(addressEntity: AddressEntity) {
+        getView().whenAddressArrived( addressEntity )
     }
 
     override fun whenErrorSearchAddressByCep() {
@@ -59,6 +59,6 @@ interface GetAddressByCepMethods : ActivityMethods {
     fun whenCepWrong( idMessage : Int )
     fun notifyErrorSearchAddress( idMessage : Int )
 
-    fun whenAddressArrived( address : Address)
+    fun whenAddressArrived(addressEntity : AddressEntity)
     fun notifyGoingSearchAddress()
 }

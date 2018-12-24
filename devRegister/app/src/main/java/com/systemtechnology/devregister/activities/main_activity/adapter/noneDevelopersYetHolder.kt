@@ -5,11 +5,11 @@ import android.view.View
 import android.widget.TextView
 import com.mikhaellopez.circularimageview.CircularImageView
 import com.systemtechnology.devregister.R
-import com.systemtechnology.devregister.activities.update_or_register_activity.UpdateOrRegisterActivity
+import com.systemtechnology.devregister.activities.update_or_register_activity.RegisterDeveloperActivity
 import com.systemtechnology.devregister.define_rules.adapter.RulesHolderAdapter
 import java.lang.IllegalStateException
 
-class NoneClientsYetHolder(view: View) : RulesHolderAdapter(view), View.OnClickListener {
+class NoneDevelopersYetHolder(view: View) : RulesHolderAdapter(view), View.OnClickListener {
     private lateinit var circularImageView  : CircularImageView
     private lateinit var textView           : TextView
 
@@ -25,7 +25,7 @@ class NoneClientsYetHolder(view: View) : RulesHolderAdapter(view), View.OnClickL
 
     override fun onClick(v: View?) {
         if( doubleClick.isSingleClick() )
-            itemView.context.startActivity( Intent( itemView.context , UpdateOrRegisterActivity::class.java ) )
+            itemView.context.startActivity( Intent( itemView.context , RegisterDeveloperActivity::class.java ) )
     }
 
     override fun bindViewHolder(obj: Any?) {

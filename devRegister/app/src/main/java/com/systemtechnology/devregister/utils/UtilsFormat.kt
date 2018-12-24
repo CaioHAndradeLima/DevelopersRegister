@@ -1,11 +1,11 @@
 package com.systemtechnology.devregister.utils
 
-import com.systemtechnology.devregister.entity.Address
+import com.systemtechnology.devregister.entity.AddressEntity
 
 object UtilsFormat {
 
-    fun formatAddressToPutOnLayout(address : Address) : String {
-        return "${address.street}, ${address.houseNumber}"
+    fun formatAddressToPutOnLayout(addressEntity : AddressEntity) : String {
+        return "${addressEntity.street}, ${addressEntity.houseNumber}"
     }
 
 }

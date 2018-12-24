@@ -2,7 +2,7 @@ package com.systemtechnology.devregister.entity
 
 import com.orm.SugarRecord
 
-class Address : SugarRecord() {
+class AddressEntity : SugarRecord() {
     //cep , logradouro, bairro , número, estado
 
     lateinit var CEP    : String
@@ -17,8 +17,8 @@ class Address : SugarRecord() {
 
 
     companion object {
-        fun getAllAddress() : MutableList<Address>? {
-            return listAll( Address::class.java  )
+        fun getAllAddress() : MutableList<AddressEntity>? {
+            return listAll( AddressEntity::class.java  )
         }
     }
 

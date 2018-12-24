@@ -3,21 +3,21 @@ package com.systemtechnology.devregister.activities.address_confirm
 import com.systemtechnology.devregister.R
 import com.systemtechnology.devregister.define_rules.ActivityMethods
 import com.systemtechnology.devregister.define_rules.RulesBasePresenter
-import com.systemtechnology.devregister.entity.Address
+import com.systemtechnology.devregister.entity.AddressEntity
 import io.reactivex.Observable
 
 class AddressConfirmPresenter(activityMethods: AddressConfirmMethods) : RulesBasePresenter(activityMethods) {
 
     private val acm = activityMethods
 
-    private fun checkAddressAndIfSuccessSendBroadcast(numberHome: String, complementary: String, address: Address) {
+    private fun checkAddressAndIfSuccessSendBroadcast(numberHome: String, complementary: String, addressEntity: AddressEntity) {
         Observable
-            .just( address )
+            .just( addressEntity )
             .map {
-                address.houseNumber     = numberHome
-                address.complementary   = complementary
+                addressEntity.houseNumber     = numberHome
+                addressEntity.complementary   = complementary
 
-                address.houseNumber != ""
+                addressEntity.houseNumber != ""
             }.filter {
                 if( !it ) {
                     acm.whenNotValid( R.string.form_cep_error_number_street )
@@ -29,8 +29,8 @@ class AddressConfirmPresenter(activityMethods: AddressConfirmMethods) : RulesBas
             .subscribe()
     }
 
-    fun whenClickedConfirm(numberHome: String, complementary: String, address: Address) {
-        checkAddressAndIfSuccessSendBroadcast( numberHome , complementary , address )
+    fun whenClickedConfirm(numberHome: String, complementary: String, addressEntity: AddressEntity) {
+        checkAddressAndIfSuccessSendBroadcast( numberHome , complementary , addressEntity )
     }
 
 }

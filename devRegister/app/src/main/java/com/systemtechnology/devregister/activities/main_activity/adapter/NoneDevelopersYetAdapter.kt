@@ -6,10 +6,10 @@ import com.systemtechnology.devregister.R
 import com.systemtechnology.devregister.define_rules.adapter.AdapterDependency
 import com.systemtechnology.devregister.define_rules.adapter.RulesAdapterRecycler
 
-class NoneClientsYetAdapter( ad: AdapterDependency ) : RulesAdapterRecycler<Any>( null , ad) {
+class NoneDevelopersYetAdapter(ad: AdapterDependency ) : RulesAdapterRecycler<Any>( null , ad) {
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): RecyclerView.ViewHolder {
-        return NoneClientsYetHolder( layoutInflater.inflate( R.layout.holder_none_clients_yet , viewGroup , false ) )
+        return NoneDevelopersYetHolder( layoutInflater.inflate( R.layout.holder_none_developers_yet , viewGroup , false ) )
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) { }

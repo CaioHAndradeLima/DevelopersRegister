@@ -40,8 +40,17 @@
 
 
         <activity android:name=".activities.get_address_by_cep.GetAddressByCepActivity"/>
-        <activity android:name=".activities.update_or_register_activity.UpdateOrRegisterActivity"/>
+
+        <activity android:name=".activities.update_or_register_activity.RegisterDeveloperActivity"
+                  android:windowSoftInputMode="adjustResize"
+                  android:theme="@style/AppThemeNoActionBar"/>
+
         <activity android:name=".activities.address_confirm.AddressConfirmActivity"/>
+
+        <activity android:name=".activities.activity_developer_activity.ActivityDeveloperActivity"/>
+
+        <activity android:name=".activities.activity_developer_details_dev.ActivityDevDetailsActivity"
+                  android:theme="@style/AppThemeNoActionBar"/>
 
     </application>
 

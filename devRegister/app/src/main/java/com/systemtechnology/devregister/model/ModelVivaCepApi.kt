@@ -1,7 +1,7 @@
 package com.systemtechnology.devregister.model
 
 import com.systemtechnology.devregister.define_rules.RulesBaseModel
-import com.systemtechnology.devregister.entity.Address
+import com.systemtechnology.devregister.entity.AddressEntity
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
@@ -54,8 +54,8 @@ class VivaCepEntity {
 
     var erro = false
 
-    fun toAddress() : Address {
-        val ad  = Address()
+    fun toAddress() : AddressEntity {
+        val ad  = AddressEntity()
         ad.city             = localidade!!
         ad.neighborhood     = bairro!!
         ad.state            = uf!!
@@ -67,7 +67,7 @@ class VivaCepEntity {
 
 
 interface VivaCepListener {
-    fun whenSearchAddressByCepCompleted(address: Address)
+    fun whenSearchAddressByCepCompleted(addressEntity: AddressEntity)
     fun whenErrorSearchAddressByCep()
 }
 

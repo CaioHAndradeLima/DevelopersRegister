@@ -27,5 +27,17 @@
     <string name="activity_update_or_register_hint_1">Nome Completo</string>
     <string name="activity_update_or_register_hint_2">CPF</string>
     <string name="holder_none_clients_yet_title">Cadastre seu primeiro desenvolvedor para começar!</string>
+    <string name="form_register_dev_title_toolbar">Cadastrar Desenvolvedor</string>
+    <string name="activity_developer_hint_3">Email</string>
+    <string name="activity_developer_hint_4">Senha</string>
+    <string name="form_client_error_photo">Selecione alguma imagem para continuar</string>
+    <string name="form_client_error_email">Digite um E-mail válido</string>
+    <string name="form_client_error_password_size">Digite uma senha maior</string>
+    <string name="activity_dev_status_stopped">Atividade Parada</string>
+    <string name="activity_dev_status_delivered">Atividade Entregue</string>
+    <string name="activity_dev_status_executing">Atividade Executando</string>
+    <string name="activity_dev_delivered_date_start_msg">Entregue em</string>
+    <string name="activity_dev_delivery_prevision">Previsto para</string>
+    <string name="activity_dev_requester">Solicitado por</string>
 
 </resources>

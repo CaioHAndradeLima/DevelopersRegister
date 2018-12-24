@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="3dp"
+        app:cardMaxElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageview"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_activity_executing"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+        />
+
+        <TextView
+                android:id="@+id/textview_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Em execução"
+                style="@style/text_view_title"
+                android:gravity="left"
+                android:layout_margin="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:ellipsize="end"
+                android:layout_toRightOf="@+id/imageview"
+        />
+
+        <TextView
+                android:id="@+id/textview_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrega em 20:00 23/01/2018"
+                android:textAppearance="?android:textAppearanceMedium"
+                style="@style/text_view_title"
+                android:gravity="left"
+                android:layout_margin="5dp"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:ellipsize="end"
+                android:layout_toRightOf="@+id/imageview"
+                android:layout_below="@+id/textview_title"
+
+        />
+
+        <TextView
+                android:id="@+id/textview_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solicitado por Caio Henrique Andrade"
+                android:textAppearance="?android:textAppearanceMedium"
+                style="@style/text_view_title"
+                android:gravity="left"
+                android:layout_margin="5dp"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:ellipsize="end"
+                android:layout_toRightOf="@+id/imageview"
+                android:layout_below="@+id/textview_subtitle"
+
+        />
+
+
+        <TextView
+
+            android:id="@+id/textview_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                style="@style/text_view_title"
+                android:gravity="left"
+                android:layout_margin="5dp"
+                android:maxLines="3"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:ellipsize="end"
+                android:layout_toRightOf="@+id/imageview"
+                android:layout_below="@+id/textview_3"
+
+        />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

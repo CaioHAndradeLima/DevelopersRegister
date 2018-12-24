@@ -2,13 +2,14 @@ package com.systemtechnology.devregister.activities.main_activity
 
 import com.systemtechnology.devregister.define_rules.ActivityMethods
 import com.systemtechnology.devregister.define_rules.RulesBasePresenter
-import com.systemtechnology.devregister.entity.Developer
+import com.systemtechnology.devregister.entity.DeveloperEntity
 import com.systemtechnology.devregister.model.ModelDeveloper
 import io.reactivex.Observable
 
 class MainPresenter(activityMethods: MainMethods) : RulesBasePresenter(activityMethods) {
+
     val mainMethods = activityMethods
-    private lateinit var list : MutableList<Developer>
+    private lateinit var list : MutableList<DeveloperEntity>
 
     override fun onCreate() {
         super.onCreate()
@@ -21,21 +22,21 @@ class MainPresenter(activityMethods: MainMethods) : RulesBasePresenter(activityM
             .fromArray(ModelDeveloper().getAllDevelopers())
             .subscribe {
                 if (it != null && it.isNotEmpty()) {
-                    mainMethods.whenClientsFound(it!!)
+                    mainMethods.whenDeveloperFound(it!!)
                     list = it
 
                 } else {
-                    mainMethods.whenNotExistsClientsYet()
+                    mainMethods.whenNotExistsDevelopersYet()
                 }
             }
 
     }
 
-    fun whenClientModified(developer : Developer, inserting: Boolean) {
+    fun whenClientModified(developerEntity : DeveloperEntity, inserting: Boolean) {
         if( inserting ) {
 
             if( ::list.isInitialized ) {
-                list.add( developer )
+                list.add( developerEntity )
             } else {
                 searchClientsAndAfterNotifyView()
                 return
@@ -44,9 +45,9 @@ class MainPresenter(activityMethods: MainMethods) : RulesBasePresenter(activityM
         } else {
 
             for (cl in list) {
-                if( cl.id == developer.id ) {
+                if( cl.id == developerEntity.id ) {
                     list.remove( cl )
-                    list.add( developer )
+                    list.add( developerEntity )
                     break
                 }
             }
@@ -59,7 +60,7 @@ class MainPresenter(activityMethods: MainMethods) : RulesBasePresenter(activityM
 }
 
 interface MainMethods : ActivityMethods {
-    fun whenNotExistsClientsYet()
-    fun whenClientsFound(listDevelopers : MutableList<Developer> )
-    fun whenListModified(list: MutableList<Developer>)
+    fun whenNotExistsDevelopersYet()
+    fun whenDeveloperFound(listDeveloperEntities : MutableList<DeveloperEntity> )
+    fun whenListModified(list: MutableList<DeveloperEntity>)
 }

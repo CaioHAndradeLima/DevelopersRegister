@@ -8,7 +8,7 @@
         android:scaleType="center"
         android:src="@drawable/ic_turn_left"
         app:backgroundTint="@color/blue_medium"
+        android:visibility="invisible"
         app:layout_anchorGravity="bottom|right|end"
-        app:layout_anchor="@id/appbar"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"/>

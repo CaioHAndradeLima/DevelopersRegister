@@ -5,11 +5,11 @@ import android.view.ViewGroup
 import com.systemtechnology.devregister.R
 import com.systemtechnology.devregister.define_rules.adapter.AdapterDependency
 import com.systemtechnology.devregister.define_rules.adapter.RulesAdapterRecycler
-import com.systemtechnology.devregister.entity.Developer
+import com.systemtechnology.devregister.entity.DeveloperEntity
 
-class ClientsAdapter(list: List<Developer>, ad: AdapterDependency) : RulesAdapterRecycler<Developer>(list, ad) {
+class DevelopersAdapter(list: List<DeveloperEntity>, ad: AdapterDependency) : RulesAdapterRecycler<DeveloperEntity>(list, ad) {
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): RecyclerView.ViewHolder {
-        return ClientsHolder( layoutInflater.inflate( R.layout.holder_clients , viewGroup , false ) )
+        return DevelopersHolder( layoutInflater.inflate( R.layout.holder_developers , viewGroup , false ) )
     }
 }

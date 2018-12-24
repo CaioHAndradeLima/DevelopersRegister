@@ -8,6 +8,7 @@
         <item name="colorAccent">     @color/colorAccent      </item>
     </style>
 
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar"/>
 
     <style name="button_default">
         <item name="android:textColor">     @android:color/white</item>
@@ -38,13 +39,25 @@
         <item name="android:layout_width">  match_parent</item>
         <item name="android:layout_height"> match_parent</item>
         <item name="android:background">    @color/blue_weak</item>
-        <item name="android:id">@+id/container</item>
+        <item type="id" name="android:id">@id/container</item>
     </style>
 
     <style name="text_view_title">
         <item name="android:gravity">       center</item>
         <item name="android:textAppearance">?android:textAppearanceLarge</item>
         <item name="android:textColor">     @color/blue_strong</item>
+    </style>
+
+
+
+    <style name="Collapse.Theme.Activity.Developer.Collapsed" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Collapse.Theme.Activity.Developer.Expanded" parent="Collapse.Theme.Activity.Developer.Collapsed">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">35dp</item>
+
     </style>
 
 </resources>

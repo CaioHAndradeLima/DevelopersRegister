@@ -11,17 +11,17 @@ import com.systemtechnology.devregister.R
 import com.systemtechnology.devregister.activities.address_confirm.AddressConfirmActivity
 import com.systemtechnology.devregister.activities.address_confirm.AddressConfirmActivityView
 import com.systemtechnology.devregister.activities.get_address_by_cep.adapter.GetAddressByCepAdapter
-import com.systemtechnology.devregister.define_rules.PresenterAny
+import com.systemtechnology.devregister.define_rules.AnyPresenter
 import com.systemtechnology.devregister.define_rules.RulesBaseActivity
-import com.systemtechnology.devregister.entity.Address
+import com.systemtechnology.devregister.entity.AddressEntity
 import com.systemtechnology.devregister.utils_adapters.loading.LoadingAdapter
 
 class GetAddressByCepActivity : GetAddressByCepActivityView() ,
                                 GetAddressByCepMethods {
 
-    override fun whenAddressArrived(address: Address) {
+    override fun whenAddressArrived(addressEntity: AddressEntity) {
         val it = Intent( this , AddressConfirmActivity::class.java )
-        it.putExtra( AddressConfirmActivityView.EXTRA_ADDRESS , toJson( address ) )
+        it.putExtra( AddressConfirmActivityView.EXTRA_ADDRESS , toJson( addressEntity ) )
         startActivity( it )
         finish()
     }
@@ -44,7 +44,7 @@ class GetAddressByCepActivity : GetAddressByCepActivityView() ,
             .whenNeedSearch( getCurrentCep() )
     }
 
-    override fun getInstancePresenter() : PresenterAny {
+    override fun getInstancePresenter() : AnyPresenter {
         return GetAddressByCepPresenter( this )
     }
 
