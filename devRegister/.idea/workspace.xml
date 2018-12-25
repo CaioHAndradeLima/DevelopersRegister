@@ -43,62 +43,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DeveloperViewModel.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt">
+      <file leaf-file-name="ActivityDevDetailsActivity.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DevelopersHolder.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/adapter/DevelopersHolder.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="372">
+              <caret line="127" column="24" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="24" />
               <folding>
-                <element signature="e#75#1096#0" expanded="true" />
+                <element signature="e#2059#2089#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainPresenter.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainPresenter.kt">
+      <file leaf-file-name="DeveloperEntity.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/entity/DeveloperEntity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-              <folding>
-                <element signature="e#67#466#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RulesBaseActivity.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/define_rules/RulesBaseActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="114" column="53" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtilsLoaderPhoto.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/utils/UtilsLoaderPhoto.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="321">
+              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -3588,15 +3549,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/register_developer/RegisterDeveloperActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/entity/AddressEntity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/model/ModelDeveloper.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/entity/DeveloperEntity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainPresenter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/messages_layout_entity/ActivityDevMessages.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt" />
         <option value="$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/components/AppBarHeaderUser.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/NoneActivityDevYetHolder.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/NoneActivityDevYetAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/holder_none_developers_yet.xml" />
@@ -3604,6 +3562,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/utils/UtilsLoaderPhoto.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/adapter/DevelopersHolder.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/entity/DeveloperEntity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt" />
       </list>
     </option>
   </component>
@@ -3618,9 +3579,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -3632,6 +3593,12 @@
               <item name="devRegister" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="devRegister" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="devregister" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
               <item name="devRegister" type="1abcf292:AndroidViewProjectNode" />
@@ -3670,7 +3637,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="ActivityHolde&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt&#10;whenActivityDevEntityModified&#9;null&#9;null&#10;whenNewActivityDevInserted&#9;null&#9;null&#10;notifyItemChanged&#9;PSI&#9;JAVA://android.support.v7.widget.RecyclerView.Adapter#notifyItemChanged&#10;MainAc&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt&#10;loadPhotoFromStorage&#9;null&#9;null&#10;ViewmOD&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt&#10;strings&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/res/values/strings.xml&#10;holdernone&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/res/layout/holder_none_developers_yet.xml&#10;None&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/NoneActivityDevYetAdapter.kt&#10;ActivityRegisterActivity&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterActivity.kt&#10;NoneActivityDevYetHolder&#9;null&#9;null&#10;NoneActivityDevYetAdapter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/NoneActivityDevYetAdapter.kt&#10;ActivityDevDetailsPresenter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsPresenter.kt&#10;holder_none_developers_yet&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/res/layout/holder_none_developers_yet.xml&#10;AppBa&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/design/src/main/java/com/systemtechnology/design/components/AppBarHeaderUser.kt&#10;DetailsAc&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;RegisterA&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterActivity.kt&#10;Detailsa&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;ActivityDetails&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/res/layout/activity_dev_details.xml&#10;AppH&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/design/src/main/java/com/systemtechnology/design/components/AppBarHeaderUser.kt&#10;ActivityHol&#9;null&#9;null&#10;Holder&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/adapter/DevelopersHolder.kt&#10;DeveloperViewModel&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt&#10;ActivityDevDe&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;Model&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt&#10;thisActivityBelongsThisDev&#9;null&#9;null&#10;ActivityR&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterActivity.kt&#10;AddressEntity&#9;null&#9;null&#10;DeveloperEntity&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/entity/DeveloperEntity.kt&#10;mainA&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt&#10;ReDeveloper&#9;null&#9;null&#10;DevActivity&#9;null&#9;null&#10;ActivityRe&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterActivity.kt&#10;ConfirmA&#9;null&#9;null&#10;ActivityDevEntityValidate&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/validate_helper/ActivityDevEntityValidate.kt&#10;ActivityRegisterPresenter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterPresenter.kt&#10;ActivityRegi&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterActivity.kt&#10;RulesBaseActivity&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/define_rules/RulesBaseActivity.kt&#10;DeveloperV&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt&#10;DEV&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/adapter/DevelopersHolder.kt&#10;DeveloperHo&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/adapter/DevelopersHolder.kt&#10;ViewModel&#9;null&#9;null&#10;inflateAppBarHeaderUser&#9;null&#9;null&#10;ActivityDevDetailsActivity&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;DeveloperHol&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/adapter/DevelopersHolder.kt&#10;AppBarHeaderUser&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/design/src/main/java/com/systemtechnology/design/components/AppBarHeaderUser.kt&#10;loadPhoto&#9;null&#9;null&#10;app_bar_header_user&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/design/src/main/res/layout/app_bar_header_user.xml&#10;RulesBa&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/define_rules/RulesBaseActivity.kt" />
+    <property name="SearchEverywhereHistoryKey" value="NoneAc&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/NoneActivityDevYetAdapter.kt&#10;addActivityDev&#9;null&#9;null&#10;Details&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;ActivityHolde&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt&#10;whenActivityDevEntityModified&#9;null&#9;null&#10;whenNewActivityDevInserted&#9;null&#9;null&#10;notifyItemChanged&#9;PSI&#9;JAVA://android.support.v7.widget.RecyclerView.Adapter#notifyItemChanged&#10;MainAc&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt&#10;loadPhotoFromStorage&#9;null&#9;null&#10;ViewmOD&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt&#10;strings&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/res/values/strings.xml&#10;holdernone&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/res/layout/holder_none_developers_yet.xml&#10;None&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/NoneActivityDevYetAdapter.kt&#10;ActivityRegisterActivity&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterActivity.kt&#10;NoneActivityDevYetHolder&#9;null&#9;null&#10;NoneActivityDevYetAdapter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/NoneActivityDevYetAdapter.kt&#10;ActivityDevDetailsPresenter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsPresenter.kt&#10;holder_none_developers_yet&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/res/layout/holder_none_developers_yet.xml&#10;AppBa&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/design/src/main/java/com/systemtechnology/design/components/AppBarHeaderUser.kt&#10;DetailsAc&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;RegisterA&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterActivity.kt&#10;Detailsa&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;ActivityDetails&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/res/layout/activity_dev_details.xml&#10;AppH&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/design/src/main/java/com/systemtechnology/design/components/AppBarHeaderUser.kt&#10;ActivityHol&#9;null&#9;null&#10;Holder&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/adapter/DevelopersHolder.kt&#10;DeveloperViewModel&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt&#10;ActivityDevDe&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;Model&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt&#10;thisActivityBelongsThisDev&#9;null&#9;null&#10;ActivityR&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterActivity.kt&#10;AddressEntity&#9;null&#9;null&#10;DeveloperEntity&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/entity/DeveloperEntity.kt&#10;mainA&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt&#10;ReDeveloper&#9;null&#9;null&#10;DevActivity&#9;null&#9;null&#10;ActivityRe&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterActivity.kt&#10;ConfirmA&#9;null&#9;null&#10;ActivityDevEntityValidate&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/validate_helper/ActivityDevEntityValidate.kt&#10;ActivityRegisterPresenter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterPresenter.kt&#10;ActivityRegi&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterActivity.kt&#10;RulesBaseActivity&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/define_rules/RulesBaseActivity.kt&#10;DeveloperV&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt&#10;DEV&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/adapter/DevelopersHolder.kt&#10;DeveloperHo&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/adapter/DevelopersHolder.kt&#10;ViewModel&#9;null&#9;null&#10;inflateAppBarHeaderUser&#9;null&#9;null&#10;ActivityDevDetailsActivity&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;DeveloperHol&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/adapter/DevelopersHolder.kt&#10;AppBarHeaderUser&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/design/src/main/java/com/systemtechnology/design/components/AppBarHeaderUser.kt" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="device.picker.selection" value="Nexus_5X_API_28_2" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
@@ -3820,37 +3787,38 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="319" y="128" width="1573" height="879" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info anchor="bottom" id="Android Profiler" order="1" weight="0.0" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Android Profiler" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Build Variants" order="1" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5016077" side_tool="true" weight="0.5485327" />
-      <window_info anchor="right" id="Preview" order="1" weight="0.2155454" />
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.32829046" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.32736573" />
       <window_info anchor="bottom" id="Logcat" order="4" sideWeight="0.49839228" weight="0.43606138" />
       <window_info id="Captures" order="7" weight="0.25" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.30960158" />
-      <window_info anchor="bottom" id="Build" order="0" sideWeight="0.8834405" weight="0.0" />
-      <window_info anchor="bottom" id="Find" order="7" sideWeight="0.49956933" weight="0.3295711" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.30960158" />
+      <window_info active="true" anchor="bottom" id="Build" order="0" sideWeight="0.8834405" visible="true" weight="0.32992327" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="bottom" id="Debug" order="9" visible="true" weight="0.31585678" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Device File Explorer" order="2" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.31585678" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" id="Preview" order="1" weight="0.2155454" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="7" sideWeight="0.49956933" weight="0.3295711" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -4037,9 +4005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#48#328#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4077,9 +4042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding>
-            <element signature="e#53#105#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4133,12 +4095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="16" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="e#58#164#0" expanded="true" />
-            <element signature="e#316#367#0" expanded="true" />
-            <element signature="e#443#480#0" expanded="true" />
-            <element signature="e#558#595#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4153,9 +4109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="e#81#597#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4184,13 +4137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/entity/DeveloperEntity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -4249,16 +4195,6 @@
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#89#579#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/components/AppBarHeaderUser.kt">
@@ -4340,24 +4276,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="82" column="56" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/80ff5d942dc0f6be2a80eaeb688f0a1f/jars/classes.jar!/android/support/v7/widget/RecyclerView.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="6084" column="26" selection-start-line="6084" selection-start-column="26" selection-end-line="6084" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -4394,10 +4316,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/adapter/DevelopersHolder.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="160">
+          <caret line="66" column="38" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
           <folding>
             <element signature="e#75#1096#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/entity/DeveloperEntity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="127" column="24" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="24" />
+          <folding>
+            <element signature="e#2059#2089#1" expanded="true" />
           </folding>
         </state>
       </provider>

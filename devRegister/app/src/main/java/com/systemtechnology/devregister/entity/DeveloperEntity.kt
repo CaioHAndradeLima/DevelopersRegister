@@ -22,7 +22,7 @@ class DeveloperEntity : SugarRecord() {
     }
 
     fun addActivityDev( ade : ActivityDevEntity) {
-        listActivityDev.add( ade )
+        listActivityDev.add(  0 , ade )
     }
 
     fun thisActivityBelongsThisDev( ade : ActivityDevEntity ) : Boolean {

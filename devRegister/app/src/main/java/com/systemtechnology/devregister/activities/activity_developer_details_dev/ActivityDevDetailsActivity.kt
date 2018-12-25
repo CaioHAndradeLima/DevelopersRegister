@@ -107,14 +107,29 @@ class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
 
     override fun onReceiv(intent: Intent) {
         if( intent.action == ActivityRegisterActivity.ACTION_ACTIVITY_DEV ) {
-            getDeveloper().addActivityDev(
-                fromJson( intent.getStringExtra( ActivityRegisterActivity.EXTRA_ACTIVITY_REGISTER_ENTITY ) ,
-                          ActivityDevEntity::class.java )
-            )
+
+            val acDev = fromJson( intent.getStringExtra( ActivityRegisterActivity.EXTRA_ACTIVITY_REGISTER_ENTITY ) ,
+                                                 ActivityDevEntity::class.java )
+
+            getDeveloper().addActivityDev( acDev )
 
             AppBarHeaderUser
                 .getSubtitle( container )
                 .text = getDeveloperViewModel().getSubtitle()
+
+
+            if( recyclerView.adapter is ActivityDeveloperAdapter ) {
+                recyclerView.adapter!!.notifyItemInserted( 0 )
+                recyclerView.layoutManager!!.scrollToPosition( 0 )
+
+            } else {
+                recyclerView.adapter = ActivityDeveloperAdapter(
+                    getDeveloper().listActivityDev ,
+                    this
+                )
+
+            }
+
         } else {
             throw IllegalStateException("not implemented ${intent.action}")
         }

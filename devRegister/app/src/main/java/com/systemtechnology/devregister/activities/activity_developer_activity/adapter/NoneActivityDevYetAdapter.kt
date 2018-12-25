@@ -13,7 +13,7 @@ class NoneActivityDevYetAdapter(ad: AdapterDependency)
     override fun onCreateViewHolder( parent : ViewGroup, i: Int) : RecyclerView.ViewHolder {
         return NoneActivityDevYetHolder(
             layoutInflater.inflate(
-                R.layout.holder_none_developers_yet ,
+                R.layout.holder_dev_none_activity_yet ,
                 parent ,
                 false
             )
@@ -22,8 +22,6 @@ class NoneActivityDevYetAdapter(ad: AdapterDependency)
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) { }
 
-    override fun getItemCount() : Int {
-        return 1
-    }
+    override fun getItemCount() : Int { return 1 }
 
 }
