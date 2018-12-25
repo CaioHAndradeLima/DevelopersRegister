@@ -10,11 +10,7 @@ class DeveloperEntity : SugarRecord() {
 
     lateinit var addressEntity : AddressEntity
 
-    companion object {
-        fun getAllDevelopers(): MutableList<DeveloperEntity>? {
-            return listAll( DeveloperEntity::class.java )
-        }
-    }
+    val listActivityDev = mutableListOf<ActivityDevEntity>()
 
     override fun save() : Long {
         addressEntity.id = super.save()
@@ -23,6 +19,14 @@ class DeveloperEntity : SugarRecord() {
 
     fun addressIsInitialized() : Boolean {
         return ::addressEntity.isInitialized
+    }
+
+    fun addActivityDev( ade : ActivityDevEntity) {
+        listActivityDev.add( ade )
+    }
+
+    fun thisActivityBelongsThisDev( ade : ActivityDevEntity ) : Boolean {
+        return ade.requested == CPF
     }
 
 

@@ -7,13 +7,14 @@ import android.widget.Button
 import android.widget.EditText
 import com.systemtechnology.devregister.entity.AddressEntity
 import com.systemtechnology.devregister.R
+import com.systemtechnology.devregister.configs.ConfigActionsBroadManager
 import com.systemtechnology.devregister.define_rules.AnyPresenter
 import com.systemtechnology.devregister.define_rules.RulesBaseActivity
 
 class AddressConfirmActivity : AddressConfirmActivityView(), AddressConfirmMethods {
 
     companion object {
-        const val ACTION_ADDRESS_COMPLETED = "ACTION_ADDRESS_COMPLETED"
+        const val ACTION_ADDRESS_COMPLETED = ConfigActionsBroadManager.ACTION_ADDRESS_COMPLETED
     }
 
     override fun whenNotValid(msg: Int) {

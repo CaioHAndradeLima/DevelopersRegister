@@ -3,7 +3,7 @@ package com.systemtechnology.devregister.activities.activity_developer_activity.
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import com.mikhaellopez.circularimageview.CircularImageView
+
 import com.systemtechnology.devregister.R
 import com.systemtechnology.devregister.define_rules.adapter.RulesHolderAdapter
 import com.systemtechnology.devregister.entity.ActivityDevEntity
@@ -35,18 +35,15 @@ class ActivityDeveloperHolder(view: View) : RulesHolderAdapter( view ) {
         textViewSubTitle.text = ActivityDevMessages
                                              .getMessageDeliveryDate( activityDev  , getResources() )
 
-        textViewSubTitle.text = ActivityDevMessages
+        textViewRequester.text = ActivityDevMessages
                                               .getMessageRequester( activityDev  , getResources() )
 
         textViewDescription.text = activityDev.description
+
         TextJustification.justify( textViewDescription )
 
-        imageView.setImageResource( getImageResource( activityDev ) )
+        imageView.setImageResource( ActivityDevMessages.getImageResource( activityDev ) )
 
-    }
-
-    private fun getImageResource(activityDev: ActivityDevEntity): Int {
-        return R.drawable.ic_activity_executing
     }
 
 

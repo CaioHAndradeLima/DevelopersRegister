@@ -20,7 +20,9 @@ class NoneActivityDevYetAdapter(ad: AdapterDependency)
         )
     }
 
-    override fun getItemCount(): Int {
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) { }
+
+    override fun getItemCount() : Int {
         return 1
     }
 

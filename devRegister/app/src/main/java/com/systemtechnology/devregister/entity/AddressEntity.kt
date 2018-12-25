@@ -14,12 +14,4 @@ class AddressEntity : SugarRecord() {
     var complementary: String = ""
     var houseNumber  : String = ""
 
-
-
-    companion object {
-        fun getAllAddress() : MutableList<AddressEntity>? {
-            return listAll( AddressEntity::class.java  )
-        }
-    }
-
 }

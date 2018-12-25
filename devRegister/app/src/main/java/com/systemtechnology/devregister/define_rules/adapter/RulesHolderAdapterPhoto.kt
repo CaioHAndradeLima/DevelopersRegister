@@ -20,15 +20,11 @@ abstract class RulesHolderAdapterPhoto(view: View) : RulesHolderAdapter(view) {
 
 
         (itemView.context as RulesBaseActivity)
-            .presenter
-            .addDisposable(
-                UtilsLoaderPhoto.loadPhotoFromStorage(
+            .loadPhotoFromStorage(
                     imageView ,
                     directory ,
-                    nameImage,
-                    auxPhoto
-                )
-            )
+                    nameImage ,
+                    auxPhoto )
     }
 
 }

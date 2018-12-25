@@ -4,10 +4,10 @@ import com.orm.SugarRecord
 import java.lang.IllegalStateException
 
 data class ActivityDevEntity(
-                var description : String ,
-                var requester   : String ,
-                var requested   : String , //save the cpf of developer
-                var dateToDelivery : String ,
+                var description : String = "" ,
+                var requester   : String = "",
+                var requested   : String = "", //save the cpf of developer
+                var dateToDelivery : String = "",
                 var dateRegistered : String = ""
                         ) : SugarRecord() {
     var status : ActivityStatus = ActivityStatus.STOPPED

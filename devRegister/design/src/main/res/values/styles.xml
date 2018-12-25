@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Collapse.Theme.Activity.Developer.Collapsed" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Collapse.Theme.Activity.Developer.Expanded" parent="Collapse.Theme.Activity.Developer.Collapsed">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">35dp</item>
+    </style>
+</resources>

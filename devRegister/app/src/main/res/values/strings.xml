@@ -26,7 +26,7 @@
     <string name="activity_get_address_cep_title">CEP</string>
     <string name="activity_update_or_register_hint_1">Nome Completo</string>
     <string name="activity_update_or_register_hint_2">CPF</string>
-    <string name="holder_none_clients_yet_title">Cadastre seu primeiro desenvolvedor para começar!</string>
+    <string name="holder_none_devs_yet_title">Cadastre seu primeiro desenvolvedor para começar!</string>
     <string name="form_register_dev_title_toolbar">Cadastrar Desenvolvedor</string>
     <string name="activity_developer_hint_3">Email</string>
     <string name="activity_developer_hint_4">Senha</string>
@@ -39,5 +39,20 @@
     <string name="activity_dev_delivered_date_start_msg">Entregue em</string>
     <string name="activity_dev_delivery_prevision">Previsto para</string>
     <string name="activity_dev_requester">Solicitado por</string>
+    <string name="activity_register_activity_title">Criar Atividade</string>
+    <string name="activity_register_activity_form_requester">Solicitante</string>
+    <string name="activity_register_activity_form_description">Descrição da atividade</string>
+    <string name="activity_register_activity_form_delivery">Entrega da atividade</string>
+    <string name="activity_register_activity_form_title">Adicione uma atividade para o desenvolvedor</string>
+    <string name="activity_register_activity_form_button">Adicionar</string>
+    <string name="activity_dev_error_form_date">Selecione uma data de entrega da atividade</string>
+    <string name="activity_dev_error_form_description_length">Crie uma descrição detalhada</string>
+    <string name="activity_dev_error_requester">Informe quem solicitou a atividade</string>
+
+    <string name="holder_none_activity_get">Crie a primeira atividade para este desenvolvedor</string>
+
+
+    <string name="activities">Atividades</string>
+    <string name="delivery_at">Entrega em</string>
 
 </resources>

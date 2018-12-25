@@ -41,7 +41,7 @@
 
         <activity android:name=".activities.get_address_by_cep.GetAddressByCepActivity"/>
 
-        <activity android:name=".activities.update_or_register_activity.RegisterDeveloperActivity"
+        <activity android:name=".activities.register_developer.RegisterDeveloperActivity"
                   android:windowSoftInputMode="adjustResize"
                   android:theme="@style/AppThemeNoActionBar"/>
 
@@ -51,6 +51,8 @@
 
         <activity android:name=".activities.activity_developer_details_dev.ActivityDevDetailsActivity"
                   android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:name=".activities.register_activity.ActivityRegisterActivity"
+                  android:theme="@style/AppThemeNoActionBar" />
 
     </application>
 

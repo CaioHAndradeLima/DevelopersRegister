@@ -2,22 +2,22 @@ package com.systemtechnology.devregister.activities.main_activity.adapter
 
 import android.app.Activity
 import android.content.Intent
-import android.os.Build
 import android.support.v4.app.ActivityOptionsCompat
 import android.view.View
 import android.widget.TextView
 import com.mikhaellopez.circularimageview.CircularImageView
 import com.systemtechnology.devregister.R
-import com.systemtechnology.devregister.activities.activity_developer_activity.ActivityDeveloperActivity
 import com.systemtechnology.devregister.activities.activity_developer_details_dev.ActivityDevDetailsActivity
-import com.systemtechnology.devregister.activities.update_or_register_activity.RegisterDeveloperActivity
-import com.systemtechnology.devregister.configs.ConfigDirectory
+import com.systemtechnology.devregister.activities.register_developer.RegisterDeveloperActivity
+
+import com.systemtechnology.devregister.define_rules.RulesBaseActivity
 import com.systemtechnology.devregister.define_rules.adapter.RulesHolderAdapterPhoto
+
 import com.systemtechnology.devregister.entity.DeveloperEntity
 import com.systemtechnology.devregister.utils.UtilsConvertJson
-import com.systemtechnology.devregister.utils.UtilsFormat
 
 import com.systemtechnology.devregister.helper_transition.TransitionHelper
+import com.systemtechnology.devregister.viewmodel.DeveloperViewModel
 
 class DevelopersHolder(view: View) : RulesHolderAdapterPhoto(view), View.OnClickListener {
 
@@ -56,18 +56,27 @@ class DevelopersHolder(view: View) : RulesHolderAdapterPhoto(view), View.OnClick
 
     }
 
+    @Synchronized
     override fun bindViewHolder(obj: Any?) {
         developerEntity = obj as DeveloperEntity
 
-        loadPhotoFromStorage(
-            circularImageView ,
-            ConfigDirectory.DIRECTORY_DEVELOPERS ,
-            developerEntity.CPF
-        )
+        val developerViewModel = getViewModel()
 
-        textViewTitle.text = developerEntity.name
-        textViewSubTitle.text = UtilsFormat
-                                    .formatAddressToPutOnLayout( developerEntity.addressEntity )
+        developerViewModel.loadPhoto( circularImageView )
+
+        textViewTitle.text = developerViewModel.getTitle()
+
+        textViewSubTitle.text = developerViewModel.getSubtitle()
+    }
+
+    fun updateActivitiesTextView() {
+        textViewSubTitle.text = getViewModel().getSubtitle()
+    }
+
+    fun getViewModel() : DeveloperViewModel {
+        return ( getContext() as RulesBaseActivity )
+                    .getViewModel( DeveloperViewModel::class.java  )
+                    .setDeveloper( developerEntity )
     }
 
 }

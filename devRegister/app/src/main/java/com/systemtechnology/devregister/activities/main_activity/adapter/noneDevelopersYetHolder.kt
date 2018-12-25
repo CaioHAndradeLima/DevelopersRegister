@@ -5,7 +5,7 @@ import android.view.View
 import android.widget.TextView
 import com.mikhaellopez.circularimageview.CircularImageView
 import com.systemtechnology.devregister.R
-import com.systemtechnology.devregister.activities.update_or_register_activity.RegisterDeveloperActivity
+import com.systemtechnology.devregister.activities.register_developer.RegisterDeveloperActivity
 import com.systemtechnology.devregister.define_rules.adapter.RulesHolderAdapter
 import java.lang.IllegalStateException
 

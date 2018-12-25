@@ -2,13 +2,14 @@ package com.systemtechnology.devregister.activities.main_activity
 
 import com.systemtechnology.devregister.define_rules.ActivityMethods
 import com.systemtechnology.devregister.define_rules.RulesBasePresenter
+import com.systemtechnology.devregister.entity.ActivityDevEntity
 import com.systemtechnology.devregister.entity.DeveloperEntity
 import com.systemtechnology.devregister.model.ModelDeveloper
 import io.reactivex.Observable
+import java.lang.IllegalStateException
 
-class MainPresenter(activityMethods: MainMethods) : RulesBasePresenter(activityMethods) {
+class MainPresenter(val mainMethods : MainMethods) : RulesBasePresenter(mainMethods) {
 
-    val mainMethods = activityMethods
     private lateinit var list : MutableList<DeveloperEntity>
 
     override fun onCreate() {
@@ -32,7 +33,7 @@ class MainPresenter(activityMethods: MainMethods) : RulesBasePresenter(activityM
 
     }
 
-    fun whenClientModified(developerEntity : DeveloperEntity, inserting: Boolean) {
+    fun whenDeveloperModified(developerEntity : DeveloperEntity, inserting: Boolean) {
         if( inserting ) {
 
             if( ::list.isInitialized ) {
@@ -57,10 +58,24 @@ class MainPresenter(activityMethods: MainMethods) : RulesBasePresenter(activityM
 
     }
 
+    fun whenActivityDevEntityModified(ade: ActivityDevEntity, isInserting: Boolean) {
+        if( isInserting )
+            for ( (index , it ) in list.withIndex() ) {
+                if( it.thisActivityBelongsThisDev( ade ) ) {
+                    it.addActivityDev( ade )
+                    mainMethods.whenNewActivityDevInserted( ade , index )
+                    break
+                }
+            }
+        else
+            throw IllegalStateException("not implemented yet")
+    }
+
 }
 
 interface MainMethods : ActivityMethods {
     fun whenNotExistsDevelopersYet()
     fun whenDeveloperFound(listDeveloperEntities : MutableList<DeveloperEntity> )
     fun whenListModified(list: MutableList<DeveloperEntity>)
+    fun whenNewActivityDevInserted(ade: ActivityDevEntity, indexPosition : Int)
 }

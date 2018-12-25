@@ -1,14 +1,25 @@
 package com.systemtechnology.devregister.define_rules
 
+import android.arch.lifecycle.ViewModel
+import android.arch.lifecycle.ViewModelProvider
+import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.annotation.LayoutRes
 import android.support.design.widget.Snackbar
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
+import android.widget.ImageView
+import caiohenrique.auxphoto.AuxiliarPhoto
+import com.systemtechnology.design.components.AppBarHeaderUser
 import com.systemtechnology.devregister.R
+import com.systemtechnology.devregister.activities.register_developer.RegisterDeveloperActivity
 import com.systemtechnology.devregister.define_rules.adapter.AdapterDependency
+import com.systemtechnology.devregister.entity.DeveloperEntity
 import com.systemtechnology.devregister.utils.DoubleClick
 import com.systemtechnology.devregister.utils.UtilsConvertJson
+import com.systemtechnology.devregister.utils.UtilsLoaderPhoto
+import com.systemtechnology.devregister.viewmodel.DeveloperViewModel
+import kotlinx.android.synthetic.main.activity_dev_details.*
 
 abstract class RulesBaseActivity : AppCompatActivity(),
                                     AdapterDependency,
@@ -89,6 +100,45 @@ abstract class RulesBaseActivity : AppCompatActivity(),
     protected fun getColorCompat( color : Int ) : Int {
         return ContextCompat.getColor( this , color )
     }
+
+    fun <T : ViewModel> getViewModel( clazz : Class<T> ) : T {
+        return ViewModelProviders.of( this ).get( clazz )
+    }
+
+    fun loadPhotoFromStorage(imageView: ImageView,
+                             directory : String,
+                             nameImage : String,
+                             auxPhoto  : AuxiliarPhoto =
+                                 AuxiliarPhoto( this ) ) {
+        presenter
+            .addDisposable(
+                UtilsLoaderPhoto.loadPhotoFromStorage(
+                    imageView ,
+                    directory ,
+                    nameImage,
+                    auxPhoto
+                )
+            )
+
+    }
+
+
+    protected fun inflateAppBarHeaderUser() : AppBarHeaderUser {
+        return AppBarHeaderUser
+                    .create(
+                        this ,
+                        container ,
+                        getViewModel( DeveloperViewModel::class.java )
+                            .setDeveloper( fromJson(
+                                intent.getStringExtra( RegisterDeveloperActivity.EXTRA_DEVELOPER ) ,
+                                DeveloperEntity::class.java
+                                )
+                            )
+                    )
+    }
+
+
+
 
 }
 

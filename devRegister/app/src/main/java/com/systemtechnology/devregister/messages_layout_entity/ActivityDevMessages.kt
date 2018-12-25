@@ -36,4 +36,16 @@ object ActivityDevMessages {
         return "${res.getString(R.string.activity_dev_requester)}  ${ad.requester}"
     }
 
+    fun getImageResource(activityDev: ActivityDevEntity): Int {
+        return if( activityDev.isStopped() ) {
+            R.drawable.ic_activity_stopped
+        } else if ( activityDev.isExecuting() ) {
+            R.drawable.ic_activity_executing
+        } else if( activityDev.isDelivered() ) {
+            R.drawable.ic_activity_done
+        } else {
+            throw IllegalStateException("not implemented yet ${activityDev.status}")
+        }
+    }
+
 }
