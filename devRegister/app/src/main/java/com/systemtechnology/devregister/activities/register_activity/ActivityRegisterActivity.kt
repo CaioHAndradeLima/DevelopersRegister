@@ -46,7 +46,7 @@ class ActivityRegisterActivity : ActivityRegisterActivityView(),
     }
 
     override fun notifyUpdating( activityDevEntity : ActivityDevEntity ) {
-        throw IllegalStateException("implement this")
+        layoutToUpdating( activityDevEntity )
     }
 
     override fun notifyInserting() {
@@ -125,6 +125,16 @@ abstract class ActivityRegisterActivityView : RulesBaseActivity() {
         }
     }
 
+    protected fun layoutToUpdating( ade : ActivityDevEntity ) {
+        txtTitle.text = getString(R.string.activity_register_activity_form_title_updating)
+        button.text   = getString(R.string.activity_register_activity_form_button_updating)
+        edtRequester.setText( ade.requester )
+        edtRequester.isEnabled = false
+
+        setNewDateOnCardView( ade.dateToDelivery )
+        edtDescription.setText( ade.description )
+    }
+
     protected fun layoutToInserting() {
         txtTitle.text = getString(R.string.activity_register_activity_form_title)
         button.text   = getString(R.string.activity_register_activity_form_button)
@@ -136,13 +146,18 @@ abstract class ActivityRegisterActivityView : RulesBaseActivity() {
             bottomDialogDate = BottomDialogDateFactory.build( this ) {
                 dateSelected = UtilsDateFormat.format( it )
 
-                txtCardViewButton.setTextColor( getColorCompat( android.R.color.holo_green_dark ) )
-                txtCardViewButton.textSize = 20F
-                txtCardViewButton.setText("${getString( R.string.delivery_at )} ${dateSelected}")
+                setNewDateOnCardView( dateSelected!! )
+
             }
         }
 
         bottomDialogDate.display()
+    }
+
+    private fun setNewDateOnCardView(dateSelected: String) {
+        txtCardViewButton.setTextColor( getColorCompat( android.R.color.holo_green_dark ) )
+        txtCardViewButton.textSize = 20F
+        txtCardViewButton.text = "${getString( R.string.delivery_at )} $dateSelected"
     }
 
     private fun closeBottomDialogDate() {

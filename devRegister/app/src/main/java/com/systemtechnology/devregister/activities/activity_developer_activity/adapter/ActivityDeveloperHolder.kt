@@ -7,6 +7,7 @@ import android.widget.TextView
 import android.widget.Toast
 
 import com.systemtechnology.devregister.R
+import com.systemtechnology.devregister.activities.activity_developer_details_dev.ActivityDevDetailsActivity
 import com.systemtechnology.devregister.activities.activity_developer_details_dev.FactoryBottomDialogEntity
 
 import com.systemtechnology.devregister.bottom_dialogs.BaseBottomDialog
@@ -18,7 +19,6 @@ import com.systemtechnology.devregister.messages_layout_entity.ActivityDevMessag
 import com.systemtechnology.devregister.utils_textview.TextJustification
 
 class ActivityDeveloperHolder(view: View) : RulesHolderAdapter( view ), View.OnClickListener {
-
 
     private lateinit var imageView          : ImageView
     private lateinit var textViewTitle      : TextView
@@ -37,21 +37,27 @@ class ActivityDeveloperHolder(view: View) : RulesHolderAdapter( view ), View.OnC
     }
 
     override fun onClick(v: View) {
-        BaseBottomDialog
-                .newInstance( OptionsRecyclerBottomDialog::class.java , Bundle() )
-                .setListOptions( FactoryBottomDialogEntity
-                                        .createOptions( activityDev )  {
-                                            //when user click bottom Dialog
-                                            Toast.makeText( getContext() ,
-                                                    "the new status is ${it.name}" , Toast.LENGTH_SHORT).show()
-
-                                        })
-                .show( getFragmentManager() , "TAG_FRAGMENT_BOTTOM" )
-
+        ( getContext() as ActivityDevDetailsActivity )
+                .openRegisterActivity( activityDev )
     }
 
     override fun setSettingsWhenExists() {
         itemView.setOnClickListener( this )
+
+        itemView.setOnLongClickListener {
+            BaseBottomDialog
+                    .newInstance( OptionsRecyclerBottomDialog::class.java , Bundle() )
+                    .setListOptions( FactoryBottomDialogEntity
+                            .createOptions( activityDev )  {
+                                //when user click bottom Dialog
+                                Toast.makeText( getContext() ,
+                                        "the new status is ${it.name}" , Toast.LENGTH_SHORT).show()
+
+                            })
+                    .show( getFragmentManager() , "TAG_FRAGMENT_BOTTOM" )
+
+            true
+        }
     }
 
     override fun bindViewHolder(obj: Any?) {
@@ -71,8 +77,5 @@ class ActivityDeveloperHolder(view: View) : RulesHolderAdapter( view ), View.OnC
         TextJustification.justify( textViewDescription )
 
         imageView.setImageResource( ActivityDevMessages.getImageResource( activityDev ) )
-
     }
-
-
 }

@@ -80,11 +80,15 @@ class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
 
     }
 
-    fun openRegisterActivity() {
+    fun openRegisterActivity( ade : ActivityDevEntity? = null) {
         val it = Intent( this , ActivityRegisterActivity::class.java )
         it.putExtra( RegisterDeveloperActivity.EXTRA_DEVELOPER  ,
             intent.getStringExtra( RegisterDeveloperActivity.EXTRA_DEVELOPER )
         )
+
+        if( ade != null ) {
+            it.putExtra( ActivityRegisterActivity.EXTRA_ACTIVITY_REGISTER_ENTITY , toJson( ade ) )
+        }
 
         if( TransitionHelper.isPossibleUseTransition() ) {
 
