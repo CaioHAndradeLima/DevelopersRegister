@@ -22,7 +22,7 @@ data class ActivityDevEntity(
     }
 
     enum class ActivityStatus {
-        STOPPED, DELIVERED , EXECUTING
+        STOPPED, DELIVERED , EXECUTING, DELETED
     }
 
     fun isStopped(): Boolean {

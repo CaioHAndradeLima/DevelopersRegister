@@ -25,6 +25,7 @@ import java.lang.IllegalStateException
 
 
 class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
+
     private lateinit var recyclerView : RecyclerView
     private lateinit var appBar       : AppBarLayout
     private lateinit var toolbar      : Toolbar
@@ -66,7 +67,7 @@ class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
 
         toolbar.setNavigationOnClickListener {
             if( doubleClick!!.isSingleClick() )
-            openRegisterActivity()
+                openRegisterActivity()
         }
 
         recyclerView.layoutManager = LinearLayoutManager( this )
@@ -127,7 +128,6 @@ class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
                     getDeveloper().listActivityDev ,
                     this
                 )
-
             }
 
         } else {

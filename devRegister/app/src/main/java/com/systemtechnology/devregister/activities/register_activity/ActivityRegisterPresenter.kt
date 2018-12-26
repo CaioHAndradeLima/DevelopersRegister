@@ -19,7 +19,7 @@ class ActivityRegisterPresenter(private val arm: ActivityRegisterMethods) : Rule
         super.onCreate()
 
         val actEntity = arm.getActivityDevIfExists()
-        val developerEntity            = arm.getDeveloperEntity()
+        val developerEntity = arm.getDeveloperEntity()
 
         isInserting = actEntity == null
 

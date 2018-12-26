@@ -1,7 +1,10 @@
 package com.systemtechnology.devregister.define_rules.adapter
 
+import android.app.Activity
 import android.content.Context
 import android.content.res.Resources
+import android.support.v4.app.FragmentManager
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.RecyclerView
 import android.view.View
 
@@ -35,6 +38,10 @@ abstract class RulesHolderAdapter(view : View) : RecyclerView.ViewHolder( view )
     protected fun getString( id : Int ) : String = getContext().getString( id )
 
     protected fun getResources() : Resources = getContext().getResources()
+
+    protected fun getFragmentManager(): FragmentManager {
+        return (getContext() as AppCompatActivity).supportFragmentManager
+    }
 
 }
 
