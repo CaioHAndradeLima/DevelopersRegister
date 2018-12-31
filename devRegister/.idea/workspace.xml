@@ -68,11 +68,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ActivityDevDetailsActivity.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ActivityDevDetailsActivity.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="148" column="34" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
+            <state relative-caret-position="-640">
+              <caret line="126" column="118" lean-forward="true" selection-start-line="126" selection-start-column="118" selection-end-line="126" selection-end-column="118" />
               <folding>
                 <element signature="e#2426#2456#1" expanded="true" />
               </folding>
@@ -80,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+            <state relative-caret-position="168">
+              <caret line="97" selection-start-line="97" selection-end-line="97" />
             </state>
           </provider>
         </entry>
@@ -94,6 +94,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-92">
               <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FactoryBottomDialogEntity.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/bottom_sheet_dialog/FactoryBottomDialogEntity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2">
+              <caret line="63" column="17" lean-forward="true" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -3642,7 +3651,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Details&#9;null&#9;null&#10;MainPresenter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainPresenter.kt&#10;AcdE&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;MainAc&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt&#10;ViewM&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt&#10;Holde&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt&#10;OptionsRecyclerBottomDialog&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/bottom_dialogs/OptionsRecyclerBottomDialog.kt&#10;Holder&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt&#10;BaseBottomDialog&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/bottom_dialogs/BaseBottomDialog.kt&#10;ActivityDeveloperHolder&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt&#10;AcDevE&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/entity/ActivityDevEntity.kt&#10;OptionBo&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/bottom_dialogs/OptionsRecyclerBottomDialog.kt&#10;UtilsConvertJson&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/utils/UtilsConvertJson.kt&#10;RulesBaseActivity&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/define_rules/RulesBaseActivity.kt&#10;RulesHolderAdapter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/define_rules/adapter/RulesHolderAdapter.kt&#10;ActivityDeveloperAdapter&#9;null&#9;null&#10;RulesBaseActivityBroadcasts&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/define_rules/RulesBaseActivityBroadcasts.kt&#10;fromJson&#9;null&#9;null&#10;AcDetails&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;TransitionHelper&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/helper_transition/TransitionHelper.kt&#10;Ruleholder&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/define_rules/adapter/RulesHolderAdapter.kt&#10;AppBar&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/design/src/main/java/com/systemtechnology/design/components/AppBarHeaderUser.kt&#10;OptionsBottomSheetEntity&#9;null&#9;null&#10;OptionsRecyclerBottomMethods&#9;null&#9;null&#10;bottomDialogEntity&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/FactoryBottomDialogEntity.kt&#10;Bottom&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/bottom_dialogs/OptionsRecyclerBottomDialog.kt&#10;Tran&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/helper_transition/TransitionHelper.kt&#10;getDeveloperById&#9;null&#9;null&#10;Main&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt&#10;updateActivityDev&#9;null&#9;null&#10;ActivityDevDetailsPresenter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsPresenter.kt&#10;ActivityRegisterPresenter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterPresenter.kt&#10;ActivityRegisterActivity&#9;null&#9;null&#10;developerViewModel&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt&#10;RulesHolderAdapterPhoto&#9;null&#9;null&#10;Transitio&#9;null&#9;null&#10;setNavigationIcon&#9;null&#9;null&#10;ActivityRegisterA&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterActivity.kt&#10;ActivityDeta&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;Photo&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/utils/UtilsLoaderPhoto.kt&#10;ActivityHolder&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt&#10;notifyUpdating&#9;null&#9;null&#10;ActivityRegis&#9;null&#9;null&#10;ActivityDetails&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;ActivityDeveloper&#9;null&#9;null&#10;Factory&#9;null&#9;null&#10;OptionHolder&#9;null&#9;null&#10;FactoryBottomDialogEntity&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/FactoryBottomDialogEntity.kt&#10;holder_options_dialog&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/res/layout/holder_options_dialog.xml&#10;colors&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/res/values/colors.xml" />
+    <property name="SearchEverywhereHistoryKey" value="Fac&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/bottom_sheet_dialog/FactoryBottomDialogEntity.kt&#10;Details&#9;null&#9;null&#10;MainPresenter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainPresenter.kt&#10;AcdE&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;MainAc&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt&#10;ViewM&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt&#10;Holde&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt&#10;OptionsRecyclerBottomDialog&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/bottom_dialogs/OptionsRecyclerBottomDialog.kt&#10;Holder&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt&#10;BaseBottomDialog&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/bottom_dialogs/BaseBottomDialog.kt&#10;ActivityDeveloperHolder&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt&#10;AcDevE&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/entity/ActivityDevEntity.kt&#10;OptionBo&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/bottom_dialogs/OptionsRecyclerBottomDialog.kt&#10;UtilsConvertJson&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/utils/UtilsConvertJson.kt&#10;RulesBaseActivity&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/define_rules/RulesBaseActivity.kt&#10;RulesHolderAdapter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/define_rules/adapter/RulesHolderAdapter.kt&#10;ActivityDeveloperAdapter&#9;null&#9;null&#10;RulesBaseActivityBroadcasts&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/define_rules/RulesBaseActivityBroadcasts.kt&#10;fromJson&#9;null&#9;null&#10;AcDetails&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;TransitionHelper&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/helper_transition/TransitionHelper.kt&#10;Ruleholder&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/define_rules/adapter/RulesHolderAdapter.kt&#10;AppBar&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/design/src/main/java/com/systemtechnology/design/components/AppBarHeaderUser.kt&#10;OptionsBottomSheetEntity&#9;null&#9;null&#10;OptionsRecyclerBottomMethods&#9;null&#9;null&#10;bottomDialogEntity&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/FactoryBottomDialogEntity.kt&#10;Bottom&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/bottom_dialogs/OptionsRecyclerBottomDialog.kt&#10;Tran&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/helper_transition/TransitionHelper.kt&#10;getDeveloperById&#9;null&#9;null&#10;Main&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt&#10;updateActivityDev&#9;null&#9;null&#10;ActivityDevDetailsPresenter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsPresenter.kt&#10;ActivityRegisterPresenter&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterPresenter.kt&#10;ActivityRegisterActivity&#9;null&#9;null&#10;developerViewModel&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt&#10;RulesHolderAdapterPhoto&#9;null&#9;null&#10;Transitio&#9;null&#9;null&#10;setNavigationIcon&#9;null&#9;null&#10;ActivityRegisterA&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_activity/ActivityRegisterActivity.kt&#10;ActivityDeta&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;Photo&#9;FILE&#9;file:///Users/mac/Documents/projectsAndroid/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/utils/UtilsLoaderPhoto.kt&#10;ActivityHolder&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_activity/adapter/ActivityDeveloperHolder.kt&#10;notifyUpdating&#9;null&#9;null&#10;ActivityRegis&#9;null&#9;null&#10;ActivityDetails&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt&#10;ActivityDeveloper&#9;null&#9;null&#10;Factory&#9;null&#9;null&#10;OptionHolder&#9;null&#9;null&#10;FactoryBottomDialogEntity&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/FactoryBottomDialogEntity.kt&#10;holder_options_dialog&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/res/layout/holder_options_dialog.xml" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
@@ -3791,7 +3800,7 @@
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.10298295" side_tool="true" weight="0.4334086" />
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="5" visible="true" weight="0.3295711" />
       <window_info anchor="bottom" id="Logcat" order="4" sideWeight="0.89701706" weight="0.4582393" />
       <window_info id="Captures" order="7" weight="0.25" />
       <window_info id="Capture Tool" order="3" />
@@ -3802,7 +3811,7 @@
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="9" visible="true" weight="0.39954853" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.39954853" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Preview" order="1" weight="0.32957503" />
@@ -3821,64 +3830,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt</url>
-          <line>96</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/define_rules/adapter/RulesHolderAdapter.kt</url>
           <line>46</line>
           <properties />
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt</url>
-          <line>87</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt</url>
-          <line>88</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt</url>
-          <line>90</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt</url>
-          <line>91</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt</url>
-          <line>89</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt</url>
-          <line>93</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt</url>
-          <line>95</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt</url>
-          <line>97</line>
-          <properties />
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="17" />
@@ -4088,16 +4043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/bottom_sheet_dialog/FactoryBottomDialogEntity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="92" column="56" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="56" />
-          <folding>
-            <element signature="e#84#270#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/address_confirm/AddressConfirmActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -4263,20 +4208,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/bottom_sheet_dialog/FactoryBottomDialogEntity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+        <state relative-caret-position="-2">
+          <caret line="63" column="17" lean-forward="true" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/activity_developer_details_dev/ActivityDevDetailsActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="148" column="34" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
+        <state relative-caret-position="-640">
+          <caret line="126" column="118" lean-forward="true" selection-start-line="126" selection-start-column="118" selection-end-line="126" selection-end-column="118" />
           <folding>
             <element signature="e#2426#2456#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
         </state>
       </provider>
     </entry>
