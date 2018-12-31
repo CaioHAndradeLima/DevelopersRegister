@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.design.widget.BottomSheetDialogFragment
 
 import android.view.View
+import com.systemtechnology.devregister.utils.UtilsConvertJson
 
 abstract class BaseBottomDialog : BottomSheetDialogFragment() ,
                                   BaseBottomDialogMethods {
@@ -43,6 +44,15 @@ abstract class BaseBottomDialog : BottomSheetDialogFragment() ,
 
         afterViewCreated()
     }
+
+    protected fun toJson( any : Any ) : String {
+        return UtilsConvertJson.toJson( any )
+    }
+
+    inline fun <reified T : Any> fromJson( json : String ) : T {
+        return UtilsConvertJson.fromJson( json )
+    }
+
 
 }
 

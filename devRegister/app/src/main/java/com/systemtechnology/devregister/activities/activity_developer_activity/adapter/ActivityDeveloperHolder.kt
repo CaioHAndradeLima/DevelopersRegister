@@ -4,14 +4,13 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 
 import com.systemtechnology.devregister.R
 import com.systemtechnology.devregister.activities.activity_developer_details_dev.ActivityDevDetailsActivity
-import com.systemtechnology.devregister.activities.activity_developer_details_dev.FactoryBottomDialogEntity
+import com.systemtechnology.devregister.activities.activity_developer_details_dev.bottom_sheet_dialog.ActvityDevOptionsBottomDialog
+import com.systemtechnology.devregister.activities.activity_developer_details_dev.bottom_sheet_dialog.FactoryBottomDialogEntity
 
 import com.systemtechnology.devregister.bottom_dialogs.BaseBottomDialog
-import com.systemtechnology.devregister.bottom_dialogs.OptionsRecyclerBottomDialog
 
 import com.systemtechnology.devregister.define_rules.adapter.RulesHolderAdapter
 import com.systemtechnology.devregister.entity.ActivityDevEntity
@@ -45,15 +44,11 @@ class ActivityDeveloperHolder(view: View) : RulesHolderAdapter( view ), View.OnC
         itemView.setOnClickListener( this )
 
         itemView.setOnLongClickListener {
-            BaseBottomDialog
-                    .newInstance( OptionsRecyclerBottomDialog::class.java , Bundle() )
-                    .setListOptions( FactoryBottomDialogEntity
-                            .createOptions( activityDev )  {
-                                //when user click bottom Dialog
-                                Toast.makeText( getContext() ,
-                                        "the new status is ${it.name}" , Toast.LENGTH_SHORT).show()
 
-                            })
+            BaseBottomDialog
+                    .newInstance( ActvityDevOptionsBottomDialog::class.java , Bundle() )
+                    .setActivityDev( activityDev )
+                    .setListOptions( FactoryBottomDialogEntity.createOptions( activityDev ) )
                     .show( getFragmentManager() , "TAG_FRAGMENT_BOTTOM" )
 
             true

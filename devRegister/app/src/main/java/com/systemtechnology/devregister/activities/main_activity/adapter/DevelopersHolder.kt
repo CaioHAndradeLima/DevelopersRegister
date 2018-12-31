@@ -43,15 +43,11 @@ class DevelopersHolder(view: View) : RulesHolderAdapterPhoto(view), View.OnClick
         val it = Intent( itemView.context , ActivityDevDetailsActivity::class.java )
         it.putExtra( RegisterDeveloperActivity.EXTRA_DEVELOPER , UtilsConvertJson.toJson( developerEntity ) )
 
-        if( TransitionHelper.isPossibleUseTransition() ) {
-            val options = ActivityOptionsCompat.makeSceneTransitionAnimation(
+        TransitionHelper.startActivity( getActivity() , it ) {
+            ActivityOptionsCompat.makeSceneTransitionAnimation(
                 getContext() as Activity ,
                 android.support.v4.util.Pair.create( itemView.findViewById(R.id.container_transition) , "container_transition" )
             )
-
-            getContext().startActivity( it ,options.toBundle() )
-        } else {
-            getContext().startActivity( it )
         }
 
     }

@@ -29,5 +29,17 @@ class DeveloperEntity : SugarRecord() {
         return ade.requested == CPF
     }
 
+    fun quantityActivityDevExecuting(): Any {
+        return getQuantityActivityDevForThisStatus(
+                    ActivityDevEntity.ActivityStatus.EXECUTING
+                )
+    }
+
+    private fun getQuantityActivityDevForThisStatus( status : ActivityDevEntity.ActivityStatus) : Int {
+        var quantity = 0
+        listActivityDev.forEach { if( it.status == status ) quantity++ }
+        return quantity
+    }
+
 
 }

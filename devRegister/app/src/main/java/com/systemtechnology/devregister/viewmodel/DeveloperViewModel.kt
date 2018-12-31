@@ -23,7 +23,20 @@ class DeveloperViewModel : ViewModel() , AppBarHeaderUser.AppBarHeaderUserMethod
     }
 
     override fun getSubtitle(): String {
-        return "${developer.listActivityDev.size} atividades agora"
+
+
+        if( developer.listActivityDev.size == 0 ) {
+            return "Ainda não possui atividades"
+        }
+
+        val quantity = developer.quantityActivityDevExecuting()
+
+        if( quantity == 0 ) {
+            return "Nenhuma atividade agora"
+        } else {
+            return "$quantity atividades agora"
+        }
+
     }
 
     override fun loadPhoto(imageView: ImageView) {

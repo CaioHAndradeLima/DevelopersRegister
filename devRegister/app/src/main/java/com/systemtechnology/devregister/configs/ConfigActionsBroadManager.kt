@@ -26,4 +26,10 @@ object ConfigActionsBroadManager {
     const val ACTION_DEVELOPER_REGISTER = "ACTION_DEVELOPER_REGISTER"
 
 
+    /**
+     * send by OptionsRecyclerBottomDialog
+     * when selected the option
+     */
+    const val ACTION_OPTION_CLICKED = "AC_OPT_CLICK"
+
 }

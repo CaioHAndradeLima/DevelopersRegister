@@ -18,13 +18,12 @@ abstract class RulesHolderAdapterPhoto(view: View) : RulesHolderAdapter(view) {
                                        directory : String,
                                        nameImage : String) {
 
-
-        (itemView.context as RulesBaseActivity)
-            .loadPhotoFromStorage(
-                    imageView ,
-                    directory ,
-                    nameImage ,
-                    auxPhoto )
+        UtilsLoaderPhoto.loadPhotoFromStorage(
+            imageView,
+            directory ,
+            nameImage ,
+            auxPhoto
+        )
     }
 
 }

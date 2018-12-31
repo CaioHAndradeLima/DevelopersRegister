@@ -8,8 +8,8 @@ object UtilsConvertJson {
         return Gson().toJson( obj )
     }
 
-    fun <T>fromJson( json : String?, obj : Class<T> ) : T{
-        return Gson().fromJson( json , obj )
+    inline fun <reified  T>fromJson( json : String? ) : T{
+        return Gson().fromJson( json , T::class.java )
     }
 
 }

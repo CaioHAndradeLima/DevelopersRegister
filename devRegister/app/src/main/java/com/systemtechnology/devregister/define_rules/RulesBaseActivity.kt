@@ -93,8 +93,8 @@ abstract class RulesBaseActivity : AppCompatActivity(),
         return UtilsConvertJson.toJson( obj )
     }
 
-    protected fun <T>fromJson( json : String?, obj : Class<T> ) : T{
-        return UtilsConvertJson.fromJson( json , obj )
+    inline fun <reified T : Any> fromJson( json : String? ) : T {
+        return UtilsConvertJson.fromJson( json )
     }
 
     protected fun getColorCompat( color : Int ) : Int {
@@ -130,8 +130,7 @@ abstract class RulesBaseActivity : AppCompatActivity(),
                         container ,
                         getViewModel( DeveloperViewModel::class.java )
                             .setDeveloper( fromJson(
-                                intent.getStringExtra( RegisterDeveloperActivity.EXTRA_DEVELOPER ) ,
-                                DeveloperEntity::class.java
+                                intent.getStringExtra( RegisterDeveloperActivity.EXTRA_DEVELOPER )
                                 )
                             )
                     )

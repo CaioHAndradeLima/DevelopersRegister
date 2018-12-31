@@ -25,24 +25,24 @@ class ActivityRegisterActivity : ActivityRegisterActivityView(),
                                  ActivityRegisterMethods {
 
     companion object {
-        const val EXTRA_ACTIVITY_REGISTER_ENTITY = "EAR"
+        const val EXTRA_ACTIVITY_REGISTER_ENTITY = "EARE"
 
         const val ACTION_ACTIVITY_DEV = ConfigActionsBroadManager.ACTION_ACTIVITY_DEV
+
+        const val EXTRA_ACTIVITY_REGISTER_ENTITY_INSERTING = "EAREI"
+
     }
 
     override fun getActivityDevIfExists() : ActivityDevEntity? {
         return fromJson(
-            intent.getStringExtra( EXTRA_ACTIVITY_REGISTER_ENTITY ),
-            ActivityDevEntity::class.java
+            intent.getStringExtra( EXTRA_ACTIVITY_REGISTER_ENTITY )
         )
     }
 
     override fun getDeveloperEntity(): DeveloperEntity {
         return fromJson(
-            intent.getStringExtra(
-                RegisterDeveloperActivity.EXTRA_DEVELOPER ),
-                DeveloperEntity::class.java
-        )
+                    intent.getStringExtra( RegisterDeveloperActivity.EXTRA_DEVELOPER )
+                )
     }
 
     override fun notifyUpdating( activityDevEntity : ActivityDevEntity ) {
@@ -53,9 +53,10 @@ class ActivityRegisterActivity : ActivityRegisterActivityView(),
         layoutToInserting()
     }
 
-    override fun whenInsertedDevEntity(ade: ActivityDevEntity) {
+    override fun whenSaveDevEntity(ade: ActivityDevEntity, isInserting : Boolean ) {
         val it = Intent( ACTION_ACTIVITY_DEV )
         it.putExtra( EXTRA_ACTIVITY_REGISTER_ENTITY , toJson( ade ) )
+        it.putExtra( EXTRA_ACTIVITY_REGISTER_ENTITY_INSERTING , isInserting )
 
         LocalBroadcastManager
             .getInstance( this )

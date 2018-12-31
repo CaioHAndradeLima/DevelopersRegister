@@ -4,16 +4,18 @@ import android.app.Activity
 import android.arch.lifecycle.ViewModel
 import android.support.design.widget.AppBarLayout
 import android.support.design.widget.CoordinatorLayout
+import android.support.design.widget.NavigationView
 import android.support.v7.widget.CardView
 import android.support.v7.widget.Toolbar
 import android.view.LayoutInflater
+import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import com.systemtechnology.design.R
 
 class AppBarHeaderUser private constructor(private val ac: Activity) {
 
-    private lateinit var toolbar : Toolbar
+    lateinit var toolbar : Toolbar
 
     internal fun build( container : CoordinatorLayout ,
                         abhum : AppBarHeaderUserMethods ) : AppBarHeaderUser {
@@ -82,6 +84,13 @@ class AppBarHeaderUser private constructor(private val ac: Activity) {
         return this
     }
 
+    inline fun setNavigationOnClickListener( crossinline onClickListener : (view : View) -> Unit ) : AppBarHeaderUser {
+        toolbar.setNavigationOnClickListener {
+            onClickListener( it )
+        }
+
+        return this
+    }
 
     companion object Build {
 

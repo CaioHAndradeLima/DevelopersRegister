@@ -6,11 +6,11 @@ import com.systemtechnology.devregister.entity.ActivityDevEntity
 import com.systemtechnology.devregister.entity.DeveloperEntity
 import com.systemtechnology.devregister.model.ModelDeveloper
 import io.reactivex.Observable
-import java.lang.IllegalStateException
 
 class MainPresenter(val mainMethods : MainMethods) : RulesBasePresenter(mainMethods) {
 
-    private lateinit var list : MutableList<DeveloperEntity>
+    lateinit var list : MutableList<DeveloperEntity>
+    private set
 
     override fun onCreate() {
         super.onCreate()
@@ -21,7 +21,7 @@ class MainPresenter(val mainMethods : MainMethods) : RulesBasePresenter(mainMeth
     private fun searchClientsAndAfterNotifyView() {
         Observable
             .fromArray(ModelDeveloper().getAllDevelopers())
-            .subscribe {
+            .doOnNext {
                 if (it != null && it.isNotEmpty()) {
                     mainMethods.whenDeveloperFound(it!!)
                     list = it
@@ -29,7 +29,7 @@ class MainPresenter(val mainMethods : MainMethods) : RulesBasePresenter(mainMeth
                 } else {
                     mainMethods.whenNotExistsDevelopersYet()
                 }
-            }
+            }.subscribe()
 
     }
 
@@ -55,20 +55,26 @@ class MainPresenter(val mainMethods : MainMethods) : RulesBasePresenter(mainMeth
         }
 
         mainMethods.whenListModified( list )
-
     }
 
-    fun whenActivityDevEntityModified(ade: ActivityDevEntity, isInserting: Boolean) {
-        if( isInserting )
-            for ( (index , it ) in list.withIndex() ) {
-                if( it.thisActivityBelongsThisDev( ade ) ) {
-                    it.addActivityDev( ade )
-                    mainMethods.whenNewActivityDevInserted( ade , index )
-                    break
-                }
+    fun whenActivityDevEntityWasInserted(ade: ActivityDevEntity) {
+        for ((index, it) in list.withIndex()) {
+            if (it.thisActivityBelongsThisDev(ade)) {
+                it.addActivityDev(ade)
+                mainMethods.whenNeedUpdateHolderActivityDev(ade, index)
+                break
             }
-        else
-            throw IllegalStateException("not implemented yet")
+        }
+    }
+
+    fun getDeveloperByCPF(CPF : String) : DeveloperEntity? {
+        for (developerEntity in list) {
+            if( developerEntity.CPF == CPF ) {
+                return developerEntity
+            }
+        }
+
+        return null
     }
 
 }
@@ -77,5 +83,5 @@ interface MainMethods : ActivityMethods {
     fun whenNotExistsDevelopersYet()
     fun whenDeveloperFound(listDeveloperEntities : MutableList<DeveloperEntity> )
     fun whenListModified(list: MutableList<DeveloperEntity>)
-    fun whenNewActivityDevInserted(ade: ActivityDevEntity, indexPosition : Int)
+    fun whenNeedUpdateHolderActivityDev(ade: ActivityDevEntity, indexPosition : Int)
 }

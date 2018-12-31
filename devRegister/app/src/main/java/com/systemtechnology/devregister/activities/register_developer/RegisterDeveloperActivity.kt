@@ -73,7 +73,7 @@ class RegisterDeveloperActivity : RegisterDeveloperActivityView(),
 
             (presenter as RegisterDeveloperPresenter).
                     whenReceiveAddress(
-                        fromJson( jsonString ,  AddressEntity::class.java )
+                        fromJson( jsonString )
                     )
         } else {
             throw IllegalStateException()

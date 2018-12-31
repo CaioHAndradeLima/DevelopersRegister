@@ -68,7 +68,7 @@ abstract class AddressConfirmActivityView : RulesBaseActivity(), View.OnClickLis
     override fun setSettingsIfExists() {
         val json = intent.getStringExtra( EXTRA_ADDRESS )
 
-        addressEntity = fromJson( json , AddressEntity::class.java )
+        addressEntity = fromJson( json )
 
         toLayout()
 

@@ -37,4 +37,8 @@ data class ActivityDevEntity(
         return status == ActivityStatus.DELIVERED
     }
 
+    fun isDeleted(): Boolean {
+        return status == ActivityStatus.DELETED
+    }
+
 }

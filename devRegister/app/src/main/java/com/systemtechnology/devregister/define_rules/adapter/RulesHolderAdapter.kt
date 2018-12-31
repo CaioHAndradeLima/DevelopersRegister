@@ -10,6 +10,7 @@ import android.view.View
 
 import com.systemtechnology.devregister.define_rules.RulesBaseActivity
 import com.systemtechnology.devregister.utils.DoubleClick
+import com.systemtechnology.devregister.utils.UtilsConvertJson
 
 /**
  * here define life cycle holder functions
@@ -26,10 +27,12 @@ abstract class RulesHolderAdapter(view : View) : RecyclerView.ViewHolder( view )
 
     protected fun getContext() : Context = itemView.context
 
+    protected fun getActivity() : Activity = getContext() as Activity
+
     protected val doubleClick : DoubleClick
         get() { return (itemView.context as RulesBaseActivity).doubleClick!! }
 
-    protected fun <T : View> findViewById(id : Int ) : T {
+    inline fun < reified T : View > findViewById(id : Int ) : T {
         return itemView.findViewById( id ) as T
     }
 
@@ -41,6 +44,10 @@ abstract class RulesHolderAdapter(view : View) : RecyclerView.ViewHolder( view )
 
     protected fun getFragmentManager(): FragmentManager {
         return (getContext() as AppCompatActivity).supportFragmentManager
+    }
+
+    protected fun toJson( any: Any ) : String {
+        return UtilsConvertJson.toJson( any )
     }
 
 }

@@ -37,24 +37,22 @@ class ActivityRegisterPresenter(private val arm: ActivityRegisterMethods) : Rule
     }
 
     fun onClick(requester: String, description: String, dateSelected: String?) {
-        if( isInserting ) {
-            activityDevEntity.requester = requester
-            activityDevEntity.description = description
+        activityDevEntity.requester = requester
+        activityDevEntity.description = description
 
-            if( dateSelected != null ) {
-                activityDevEntity.dateToDelivery = dateSelected
-            }
-
-            val resString = ActivityDevEntityValidate.validate( activityDevEntity )
-
-            if( resString != 0 ) {
-                arm.whenFormError( resString )
-            } else {
-                activityDevEntity.save()
-                arm.whenInsertedDevEntity( activityDevEntity )
-            }
-
+        if( dateSelected != null ) {
+            activityDevEntity.dateToDelivery = dateSelected
         }
+
+        val resString = ActivityDevEntityValidate.validate( activityDevEntity )
+
+        if( resString != 0 ) {
+            arm.whenFormError( resString )
+        } else {
+            activityDevEntity.save()
+            arm.whenSaveDevEntity( activityDevEntity , isInserting )
+        }
+
     }
 
 }
@@ -63,7 +61,7 @@ class ActivityRegisterPresenter(private val arm: ActivityRegisterMethods) : Rule
 interface ActivityRegisterMethods : ActivityMethods {
 
     fun whenFormError( resString : Int )
-    fun whenInsertedDevEntity( ade : ActivityDevEntity )
+    fun whenSaveDevEntity(ade : ActivityDevEntity , isInserting : Boolean )
 
     fun getActivityDevIfExists() : ActivityDevEntity?
 
