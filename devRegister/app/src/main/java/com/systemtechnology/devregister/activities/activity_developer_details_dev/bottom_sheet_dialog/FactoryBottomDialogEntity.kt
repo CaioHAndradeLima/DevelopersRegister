@@ -3,6 +3,7 @@ package com.systemtechnology.devregister.activities.activity_developer_details_d
 import com.systemtechnology.devregister.R
 import com.systemtechnology.devregister.bottom_dialogs.OptionsBottomSheetEntity
 import com.systemtechnology.devregister.entity.ActivityDevEntity
+import com.systemtechnology.devregister.entity.infix_methods.*
 
 object FactoryBottomDialogEntity {
 

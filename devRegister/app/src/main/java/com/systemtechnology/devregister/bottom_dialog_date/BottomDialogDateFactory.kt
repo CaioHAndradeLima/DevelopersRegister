@@ -13,7 +13,7 @@ object BottomDialogDateFactory {
     private const val MINUTES_BETWEEN_HOURS = 15
 
 
-    fun build( activity : Activity , listener : (date : Date) -> Unit) : SingleDateAndTimePickerDialog {
+    fun build( activity : Activity , listener : (date : Date) -> Unit ) : SingleDateAndTimePickerDialog {
 
         return  SingleDateAndTimePickerDialog
                     .Builder(activity)

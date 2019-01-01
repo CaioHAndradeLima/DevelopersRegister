@@ -8,4 +8,5 @@ object ModelActivityDeveloper {
     fun getAllActivityDev() : MutableList<ActivityDevEntity>? {
         return SugarRecord.listAll(ActivityDevEntity::class.java)
     }
+
 }

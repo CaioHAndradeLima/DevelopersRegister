@@ -1,7 +1,6 @@
 package com.systemtechnology.devregister.activities.main_activity
 
 import android.content.Intent
-import android.content.IntentFilter
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
@@ -23,6 +22,7 @@ import com.systemtechnology.devregister.entity.ActivityDevEntity
 import com.systemtechnology.devregister.entity.DeveloperEntity
 import com.systemtechnology.devregister.helper_transition.TransitionHelper
 import java.lang.IllegalStateException
+import com.systemtechnology.devregister.entity.infix_methods.*
 
 class MainActivity : MainActivityView() ,
                      MainMethods {

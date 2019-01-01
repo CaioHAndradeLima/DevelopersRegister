@@ -30,6 +30,7 @@ dependencies {
     implementation 'com.android.support:cardview-v7:28.0.0'
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
+
     //reactx programming
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
     implementation 'io.reactivex.rxjava2:rxjava:2.2.2'
@@ -42,12 +43,15 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:1.1.1"
     implementation "android.arch.lifecycle:viewmodel:1.1.1"
 
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
 
     implementation 'com.github.florent37:singledateandtimepicker:2.0.4'
 
     implementation('com.github.satyan:sugar:1.4') {
         exclude group: "com.android.support"
     }
+
     implementation 'com.github.CaioHenriqueAndrade:auxiliarPhoto:1.0.9'
 
     implementation 'com.android.support:percent:28.0.0'

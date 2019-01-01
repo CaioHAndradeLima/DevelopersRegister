@@ -4,7 +4,7 @@ import android.content.Intent
 import com.systemtechnology.devregister.bottom_dialogs.OptionsBottomSheetEntity
 import com.systemtechnology.devregister.bottom_dialogs.OptionsRecyclerBottomDialog
 import com.systemtechnology.devregister.entity.ActivityDevEntity
-import com.systemtechnology.devregister.entity.toJson
+import com.systemtechnology.devregister.entity.infix_methods.toJson
 
 class ActvityDevOptionsBottomDialog : OptionsRecyclerBottomDialog() {
 

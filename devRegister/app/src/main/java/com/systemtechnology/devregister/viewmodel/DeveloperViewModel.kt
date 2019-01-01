@@ -24,8 +24,7 @@ class DeveloperViewModel : ViewModel() , AppBarHeaderUser.AppBarHeaderUserMethod
 
     override fun getSubtitle(): String {
 
-
-        if( developer.listActivityDev.size == 0 ) {
+        if( developer.listActivityDev.isEmpty() ) {
             return "Ainda não possui atividades"
         }
 

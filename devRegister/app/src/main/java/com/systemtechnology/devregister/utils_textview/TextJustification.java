@@ -17,6 +17,19 @@ public class TextJustification {
 
     public static void justify(final TextView textView) {
 
+        textView.post(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    process(textView);
+                } catch (Exception ignored) { }
+
+            }
+        });
+    }
+
+    private static void process(final TextView textView) {
+
         final AtomicBoolean isJustify = new AtomicBoolean(false);
 
         final String textString = textView.getText().toString();
@@ -29,57 +42,53 @@ public class TextJustification {
                 (Spannable) textViewText :
                 new SpannableString(textString);
 
-        textView.post(new Runnable() {
-            @Override
-            public void run() {
 
-                if (!isJustify.get()) {
 
-                    final int lineCount = textView.getLineCount();
-                    final int textViewWidth = textView.getWidth();
+        if (!isJustify.get()) {
 
-                    for (int i = 0; i < lineCount; i++) {
+            final int lineCount = textView.getLineCount();
+            final int textViewWidth = textView.getWidth();
 
-                        int lineStart = textView.getLayout().getLineStart(i);
-                        int lineEnd = textView.getLayout().getLineEnd(i);
+            for (int i = 0; i < lineCount; i++) {
 
-                        String lineString = textString.substring(lineStart, lineEnd);
+                int lineStart = textView.getLayout().getLineStart(i);
+                int lineEnd = textView.getLayout().getLineEnd(i);
 
-                        if (i == lineCount - 1) {
-                            break;
+                String lineString = textString.substring(lineStart, lineEnd);
+
+                if (i == lineCount - 1) {
+                    break;
+                }
+
+                String trimSpaceText = lineString.trim();
+                String removeSpaceText = lineString.replaceAll(" ", "");
+
+                float removeSpaceWidth = textPaint.measureText(removeSpaceText);
+                float spaceCount = trimSpaceText.length() - removeSpaceText.length();
+
+                float eachSpaceWidth = (textViewWidth - removeSpaceWidth) / spaceCount;
+
+                Set<Integer> endsSpace = spacePositionInEnds(lineString);
+                for (int j = 0; j < lineString.length(); j++) {
+                    char c = lineString.charAt(j);
+
+                    Drawable drawable = new ColorDrawable(0x00ffffff);
+
+                    if (c == ' ') {
+                        if (endsSpace.contains(j)) {
+                            drawable.setBounds(0, 0, 0, 0);
+                        } else {
+                            drawable.setBounds(0, 0, (int) eachSpaceWidth, 0);
                         }
-
-                        String trimSpaceText = lineString.trim();
-                        String removeSpaceText = lineString.replaceAll(" ", "");
-
-                        float removeSpaceWidth = textPaint.measureText(removeSpaceText);
-                        float spaceCount = trimSpaceText.length() - removeSpaceText.length();
-
-                        float eachSpaceWidth = (textViewWidth - removeSpaceWidth) / spaceCount;
-
-                        Set<Integer> endsSpace = spacePositionInEnds(lineString);
-                        for (int j = 0; j < lineString.length(); j++) {
-                            char c = lineString.charAt(j);
-
-                            Drawable drawable = new ColorDrawable(0x00ffffff);
-
-                            if (c == ' ') {
-                                if (endsSpace.contains(j)) {
-                                    drawable.setBounds(0, 0, 0, 0);
-                                } else {
-                                    drawable.setBounds(0, 0, (int) eachSpaceWidth, 0);
-                                }
-                                ImageSpan span = new ImageSpan(drawable);
-                                builder.setSpan(span, lineStart + j, lineStart + j + 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-                            }
-                        }
+                        ImageSpan span = new ImageSpan(drawable);
+                        builder.setSpan(span, lineStart + j, lineStart + j + 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
                     }
-
-                    textView.setText(builder);
-                    isJustify.set(true);
                 }
             }
-        });
+
+            textView.setText(builder);
+            isJustify.set(true);
+        }
     }
 
     private static Set<Integer> spacePositionInEnds(String string) {

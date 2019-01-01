@@ -10,9 +10,9 @@ import com.systemtechnology.devregister.define_rules.AnyPresenter
 import com.systemtechnology.devregister.entity.ActivityDevEntity
 import android.support.design.widget.AppBarLayout
 import android.support.v4.app.ActivityOptionsCompat
+import android.support.v4.widget.SwipeRefreshLayout
 
 import com.systemtechnology.design.components.AppBarHeaderUser
-import com.systemtechnology.devregister.activities.activity_developer_activity.adapter.ActivityDeveloperHolder
 import com.systemtechnology.devregister.activities.activity_developer_activity.adapter.NoneActivityDevYetAdapter
 import com.systemtechnology.devregister.activities.activity_developer_details_dev.bottom_sheet_dialog.ActvityDevOptionsBottomDialog
 import com.systemtechnology.devregister.activities.activity_developer_details_dev.bottom_sheet_dialog.FactoryBottomDialogEntity
@@ -22,15 +22,20 @@ import com.systemtechnology.devregister.bottom_dialogs.OptionsRecyclerBottomDial
 import com.systemtechnology.devregister.define_rules.RulesBaseActivityBroadcasts
 import com.systemtechnology.devregister.entity.DeveloperEntity
 import com.systemtechnology.devregister.helper_transition.TransitionHelper
+import com.systemtechnology.devregister.class_methods_infix.view_methods_infix.makeAnimationByIndex
 import com.systemtechnology.devregister.viewmodel.DeveloperViewModel
+import io.reactivex.Observable
+import io.reactivex.android.schedulers.AndroidSchedulers
 import kotlinx.android.synthetic.main.activity_dev_details.*
 import java.lang.IllegalStateException
+import java.util.concurrent.TimeUnit
 
 
 class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
 
     private lateinit var recyclerView : RecyclerView
     private lateinit var appBar       : AppBarLayout
+    private lateinit var swipeRefresh : SwipeRefreshLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         TransitionHelper.enableTransition( this )
@@ -56,6 +61,7 @@ class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
     override fun getReferences() {
         recyclerView = recyclerview
         appBar       = findViewById( R.id.app_bar)
+        swipeRefresh = swipe_refresh_layout
     }
 
     override fun getInstancePresenter(): AnyPresenter {
@@ -70,6 +76,19 @@ class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
             recyclerView.adapter = ActivityDeveloperAdapter( getDeveloper().listActivityDev  , this )
         } else {
             recyclerView.adapter = NoneActivityDevYetAdapter( this )
+        }
+
+        swipeRefresh.setColorSchemeColors(
+            getColorCompat( R.color.blue_strong ),
+            getColorCompat( android.R.color.holo_red_dark ),
+            getColorCompat( R.color.blue_strong ) )
+
+        swipeRefresh.setOnRefreshListener {
+            Observable
+                .timer(2500, TimeUnit.MILLISECONDS)
+                .observeOn(AndroidSchedulers.mainThread())
+                .map { swipeRefresh?.isRefreshing = false }
+                .subscribe()
         }
 
     }
@@ -138,6 +157,10 @@ class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
                 } else {
                     recyclerView.adapter!!.notifyItemChanged( index )
                     it.save()
+
+                    recyclerView.
+                        makeAnimationByIndex( index )
+
                 }
 
                 updateSubtitle()
@@ -171,6 +194,9 @@ class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
                 recyclerView.adapter!!.notifyItemInserted( 0 )
                 recyclerView.layoutManager!!.scrollToPosition( 0 )
 
+                recyclerView.
+                    makeAnimationByIndex( 0 )
+
             } else {
                 recyclerView.adapter = ActivityDeveloperAdapter(
                     getDeveloper().listActivityDev ,
@@ -180,14 +206,17 @@ class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
 
         } else {
             //is updating
+            val index = ActivityDevDetailsPresenter.updateActivityDev(
+                                getDeveloper() ,
+                                acDev
+                            )
+            recyclerView.adapter!!.notifyItemChanged( index )
 
-            recyclerView.adapter!!.notifyItemChanged(
-                ActivityDevDetailsPresenter.updateActivityDev(
-                    getDeveloper() ,
-                    acDev
-                )
-            )
+            recyclerView.
+                makeAnimationByIndex( index )
+
         }
+
 
         updateSubtitle()
     }

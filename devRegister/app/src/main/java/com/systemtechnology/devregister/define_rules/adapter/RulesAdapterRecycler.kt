@@ -2,6 +2,7 @@ package com.systemtechnology.devregister.define_rules.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
+import com.systemtechnology.devregister.animation_view.AnimationViewFactory
 
 /**
  * apply the rules for any adapter,

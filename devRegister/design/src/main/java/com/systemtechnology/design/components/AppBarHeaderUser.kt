@@ -43,7 +43,8 @@ class AppBarHeaderUser private constructor(private val ac: Activity) {
     private fun inflateMenuToolbar() {
         toolbar.inflateMenu( R.menu.menu_exit )
         toolbar.setOnMenuItemClickListener {
-            if( it.itemId == R.id.ic_exit ) {
+            if( it.itemId == R.id.ic_exit &&
+                toolbar.alpha > Consts.MIN_ALPHA_TOOLBAR ) {
                 ac.onBackPressed()
             }
             false
@@ -57,11 +58,15 @@ class AppBarHeaderUser private constructor(private val ac: Activity) {
         changeOpacity(newPercentage)
     }
 
+    private object Consts {
+        const val MIN_ALPHA_TOOLBAR = 0.1F
+    }
+
     private fun changeOpacity(newPercentage: Float) {
         //   val newOpacidade = (newPercentage.toDouble() * 100.0 * 2.55).toInt()
 
         if( toolbar.alpha > newPercentage ) {
-            if( newPercentage < 0.1F ) {
+            if( newPercentage < Consts.MIN_ALPHA_TOOLBAR ) {
                 toolbar.alpha = 0F
             }
             return

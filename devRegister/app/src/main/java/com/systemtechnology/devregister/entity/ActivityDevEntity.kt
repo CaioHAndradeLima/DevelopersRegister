@@ -10,9 +10,10 @@ data class ActivityDevEntity(
                 var dateToDelivery : String = "",
                 var dateRegistered : String = ""
                         ) : SugarRecord() {
-    var status : ActivityStatus = ActivityStatus.STOPPED
+    var status = ActivityStatus.STOPPED
 
     set(value) {
+
         if( status == ActivityStatus.STOPPED &&
             value == ActivityStatus.DELIVERED ) {
             throw IllegalStateException("delivering without execute before?")
@@ -21,24 +22,8 @@ data class ActivityDevEntity(
         field = value
     }
 
+
     enum class ActivityStatus {
         STOPPED, DELIVERED , EXECUTING, DELETED
     }
-
-    fun isStopped(): Boolean {
-        return status == ActivityStatus.STOPPED
-    }
-
-    fun isExecuting(): Boolean {
-        return status == ActivityStatus.EXECUTING
-    }
-
-    fun isDelivered(): Boolean {
-        return status == ActivityStatus.DELIVERED
-    }
-
-    fun isDeleted(): Boolean {
-        return status == ActivityStatus.DELETED
-    }
-
 }

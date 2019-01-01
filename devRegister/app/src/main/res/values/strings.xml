@@ -7,7 +7,7 @@
     <string name="form_client_error_name">       Digite o nome inteiro corretamente</string>
     <string name="form_client_error_cpf">        Digite o CPF corretamente</string>
     <string name="form_client_error_address">    Informe o endereço</string>
-
+    <string name="activity_get_address_cep_title">CEP</string>
 
     <string name="update_register_inserting_title">Cadastre um novo desenvolvedor preenchendo os campos abaixo</string>
     <string name="update_register_inserting_photo">Adicionar Endereço</string>
@@ -16,6 +16,7 @@
     <string name="update_register_updating_title">Atualize aqui seus desenvolvedores sempre que precisar</string>
     <string name="update_register_updating_photo">Modificar Endereço</string>
     <string name="update_register_updating_button">Atualizar</string>
+
     <string name="activity_address_confirm_title">Agora precisamos apenas confirmar o número de sua residência e
         complementos
     </string>
@@ -23,11 +24,16 @@
     <string name="activity_address_confirm_hint_2">Número</string>
     <string name="activity_address_confirm_hint_3">Complemento</string>
     <string name="activity_address_confirm_button">Confirmar Endereço</string>
-    <string name="activity_get_address_cep_title">CEP</string>
+
     <string name="activity_update_or_register_hint_1">Nome Completo</string>
     <string name="activity_update_or_register_hint_2">CPF</string>
+
     <string name="holder_none_devs_yet_title">Cadastre seu primeiro desenvolvedor para começar!</string>
+
     <string name="form_register_dev_title_toolbar">Cadastrar Desenvolvedor</string>
+    <string name="form_register_dev_title_toolbar_update">Atualizar atividade</string>
+    <string name="form_register_dev_title_toolbar_delivered">Atividade entregue</string>
+
     <string name="activity_developer_hint_3">Email</string>
     <string name="activity_developer_hint_4">Senha</string>
     <string name="form_client_error_photo">Selecione alguma imagem para continuar</string>
@@ -56,5 +62,6 @@
     <string name="delivery_at">Entrega em</string>
     <string name="activity_register_activity_form_title_updating">Atualize a atividade</string>
     <string name="activity_register_activity_form_button_updating">Atualizar</string>
+    <string name="activity_register_activity_form_title_delivered">Atividade finalizada</string>
 
 </resources>

@@ -23,7 +23,7 @@ class MainPresenter(val mainMethods : MainMethods) : RulesBasePresenter(mainMeth
             .fromArray(ModelDeveloper().getAllDevelopers())
             .doOnNext {
                 if (it != null && it.isNotEmpty()) {
-                    mainMethods.whenDeveloperFound(it!!)
+                    mainMethods.whenDeveloperFound(it)
                     list = it
 
                 } else {

@@ -2,6 +2,7 @@ package com.systemtechnology.devregister.activities.register_developer
 
 import android.content.Intent
 import android.graphics.Bitmap
+import android.location.Address
 import android.support.v4.content.LocalBroadcastManager
 import android.support.v7.widget.CardView
 import android.view.MenuItem
@@ -21,6 +22,7 @@ import com.systemtechnology.devregister.entity.AddressEntity
 import com.systemtechnology.devregister.entity.DeveloperEntity
 import com.systemtechnology.devregister.mask_helper.CpfCnpjMask
 import com.systemtechnology.devregister.utils.UtilsIntentAction
+import kotlinx.android.synthetic.main.activity_register_activity.view.*
 import kotlinx.android.synthetic.main.activity_register_developer.*
 import java.lang.IllegalStateException
 
@@ -75,6 +77,12 @@ class RegisterDeveloperActivity : RegisterDeveloperActivityView(),
                     whenReceiveAddress(
                         fromJson( jsonString )
                     )
+
+            updateButtonAddress(
+                (presenter as RegisterDeveloperPresenter)
+                    .developer.addressEntity
+            )
+
         } else {
             throw IllegalStateException()
         }
@@ -166,5 +174,8 @@ abstract class RegisterDeveloperActivityView : RulesBaseActivityBroadcasts(), Vi
 
     }
 
+    protected fun updateButtonAddress(address : AddressEntity) {
+        cardView.text_view_photo.text = address.street
+    }
 
 }

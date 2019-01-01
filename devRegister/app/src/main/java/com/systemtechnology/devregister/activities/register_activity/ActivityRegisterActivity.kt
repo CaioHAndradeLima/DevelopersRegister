@@ -2,6 +2,7 @@ package com.systemtechnology.devregister.activities.register_activity
 
 import android.content.Intent
 import android.support.v4.content.LocalBroadcastManager
+import android.support.v7.widget.Toolbar
 import android.widget.EditText
 import android.widget.TextView
 
@@ -15,11 +16,11 @@ import com.systemtechnology.devregister.define_rules.AnyPresenter
 import com.systemtechnology.devregister.define_rules.RulesBaseActivity
 import com.systemtechnology.devregister.entity.ActivityDevEntity
 import com.systemtechnology.devregister.entity.DeveloperEntity
+import com.systemtechnology.devregister.entity.infix_methods.*
 
 import com.systemtechnology.devregister.utils_date.UtilsDateFormat
 
 import kotlinx.android.synthetic.main.activity_register_activity.*
-import java.lang.IllegalStateException
 
 class ActivityRegisterActivity : ActivityRegisterActivityView(),
                                  ActivityRegisterMethods {
@@ -127,8 +128,28 @@ abstract class ActivityRegisterActivityView : RulesBaseActivity() {
     }
 
     protected fun layoutToUpdating( ade : ActivityDevEntity ) {
-        txtTitle.text = getString(R.string.activity_register_activity_form_title_updating)
-        button.text   = getString(R.string.activity_register_activity_form_button_updating)
+        if( ade.isDelivered() ) {
+
+            val msg = getString(R.string.activity_register_activity_form_title_delivered)
+            txtTitle.text = msg
+            button.text   = msg
+
+            button.setOnClickListener( null )
+            card_view.setOnClickListener( null )
+            edtDescription.isEnabled = false
+            getToolbar().title = getString(R.string.form_register_dev_title_toolbar_delivered)
+
+        } else {
+            txtTitle.text = getString(R.string.activity_register_activity_form_title_updating)
+            button.text   = getString(R.string.activity_register_activity_form_button_updating)
+
+            if( ade.alreadySaved() ) {
+                getToolbar().title = getString(R.string.form_register_dev_title_toolbar_update)
+            }
+
+        }
+
+
         edtRequester.setText( ade.requester )
         edtRequester.isEnabled = false
 
@@ -174,4 +195,7 @@ abstract class ActivityRegisterActivityView : RulesBaseActivity() {
 
         super.onBackPressed()
     }
+
+    protected fun getToolbar() = findViewById<Toolbar>( R.id.toolbar )
+
 }

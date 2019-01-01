@@ -3,6 +3,7 @@ package com.systemtechnology.devregister.messages_layout_entity
 import android.content.res.Resources
 import com.systemtechnology.devregister.R
 import com.systemtechnology.devregister.entity.ActivityDevEntity
+import com.systemtechnology.devregister.entity.infix_methods.*
 import java.lang.IllegalStateException
 
 object ActivityDevMessages {
