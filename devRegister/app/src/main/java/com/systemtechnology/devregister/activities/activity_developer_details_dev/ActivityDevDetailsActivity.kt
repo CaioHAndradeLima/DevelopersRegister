@@ -194,8 +194,7 @@ class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
                 recyclerView.adapter!!.notifyItemInserted( 0 )
                 recyclerView.layoutManager!!.scrollToPosition( 0 )
 
-                recyclerView.
-                    makeAnimationByIndex( 0 )
+                //recyclerView.makeAnimationByIndex( 0 )
 
             } else {
                 recyclerView.adapter = ActivityDeveloperAdapter(
@@ -212,11 +211,8 @@ class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
                             )
             recyclerView.adapter!!.notifyItemChanged( index )
 
-            recyclerView.
-                makeAnimationByIndex( index )
-
+            //recyclerView.makeAnimationByIndex( index )
         }
-
 
         updateSubtitle()
     }
