@@ -2,11 +2,13 @@ package com.systemtechnology.devregister.entity
 
 import com.orm.SugarRecord
 
-class DeveloperEntity : SugarRecord() {
-    var name : String = ""
-    var CPF  : String = ""
-    var email: String = ""
-    var password: String = ""
+class DeveloperEntity(
+            var name : String = "",
+            var CPF  : String = "",
+            var email: String = "",
+            var password: String = ""
+                    ) : SugarRecord() {
+
 
     lateinit var addressEntity : AddressEntity
 
