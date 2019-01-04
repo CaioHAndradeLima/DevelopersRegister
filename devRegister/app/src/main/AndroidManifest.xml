@@ -4,7 +4,8 @@
 
 
     <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
             android:allowBackup="true"
@@ -42,7 +43,7 @@
         <activity android:name=".activities.get_address_by_cep.GetAddressByCepActivity"/>
 
         <activity android:name=".activities.register_developer.RegisterDeveloperActivity"
-                  android:windowSoftInputMode="adjustResize"
+                  android:windowSoftInputMode="adjustPan"
                   android:theme="@style/AppThemeNoActionBar"/>
 
         <activity android:name=".activities.address_confirm.AddressConfirmActivity"/>
@@ -51,8 +52,10 @@
 
         <activity android:name=".activities.activity_developer_details_dev.ActivityDevDetailsActivity"
                   android:theme="@style/AppThemeNoActionBar"/>
+
         <activity android:name=".activities.register_activity.ActivityRegisterActivity"
                   android:theme="@style/AppThemeNoActionBar" />
+
 
     </application>
 

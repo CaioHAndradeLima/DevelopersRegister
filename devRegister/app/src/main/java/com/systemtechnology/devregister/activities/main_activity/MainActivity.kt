@@ -10,6 +10,7 @@ import com.systemtechnology.devregister.R
 import com.systemtechnology.devregister.activities.activity_developer_details_dev.ActivityDevDetailsPresenter
 import com.systemtechnology.devregister.activities.activity_developer_details_dev.bottom_sheet_dialog.ActvityDevOptionsBottomDialog
 import com.systemtechnology.devregister.activities.activity_developer_details_dev.bottom_sheet_dialog.FactoryBottomDialogEntity
+
 import com.systemtechnology.devregister.activities.main_activity.adapter.DevelopersAdapter
 import com.systemtechnology.devregister.activities.main_activity.adapter.DevelopersHolder
 import com.systemtechnology.devregister.activities.main_activity.adapter.NoneDevelopersYetAdapter
@@ -103,9 +104,8 @@ class MainActivity : MainActivityView() ,
                 break
             }
         }
-
-
     }
+
 
     private fun notifyActionActivityDev(intent: Intent) {
 

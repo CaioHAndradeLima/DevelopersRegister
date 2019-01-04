@@ -3,9 +3,9 @@ package com.systemtechnology.devregister.viewmodel
 import android.arch.lifecycle.ViewModel
 import android.widget.ImageView
 import com.systemtechnology.design.components.AppBarHeaderUser
+import com.systemtechnology.design.utils.UtilsLoaderPhoto
 import com.systemtechnology.devregister.configs.ConfigDirectory
 import com.systemtechnology.devregister.entity.DeveloperEntity
-import com.systemtechnology.devregister.utils.UtilsLoaderPhoto
 
 class DeveloperViewModel : ViewModel() , AppBarHeaderUser.AppBarHeaderUserMethods {
 

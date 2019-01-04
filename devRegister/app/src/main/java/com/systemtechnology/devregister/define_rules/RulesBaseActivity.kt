@@ -1,7 +1,6 @@
 package com.systemtechnology.devregister.define_rules
 
 import android.arch.lifecycle.ViewModel
-import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.annotation.LayoutRes
@@ -11,13 +10,12 @@ import android.support.v7.app.AppCompatActivity
 import android.widget.ImageView
 import caiohenrique.auxphoto.AuxiliarPhoto
 import com.systemtechnology.design.components.AppBarHeaderUser
+import com.systemtechnology.design.utils.UtilsLoaderPhoto
 import com.systemtechnology.devregister.R
 import com.systemtechnology.devregister.activities.register_developer.RegisterDeveloperActivity
 import com.systemtechnology.devregister.define_rules.adapter.AdapterDependency
-import com.systemtechnology.devregister.entity.DeveloperEntity
 import com.systemtechnology.devregister.utils.DoubleClick
 import com.systemtechnology.devregister.utils.UtilsConvertJson
-import com.systemtechnology.devregister.utils.UtilsLoaderPhoto
 import com.systemtechnology.devregister.viewmodel.DeveloperViewModel
 import kotlinx.android.synthetic.main.activity_dev_details.*
 

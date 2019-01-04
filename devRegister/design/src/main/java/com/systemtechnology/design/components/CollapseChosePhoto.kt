@@ -11,11 +11,15 @@ import android.support.design.widget.FloatingActionButton
 import android.util.AttributeSet
 import android.view.ContextThemeWrapper
 import android.view.LayoutInflater
-import android.view.View
-import com.systemtechnology.design.IntentPhotoUtils
+
+import com.systemtechnology.design.utils.IntentPhotoUtils
 import com.systemtechnology.design.R
+import com.systemtechnology.design.factory.CameraActivityFactory
+import com.systemtechnology.design.utils.DoubleClick
+import com.systemtechnology.design.utils.UtilsLoaderPhoto
+import com.yanzhenjie.album.AlbumFile
 import kotlinx.android.synthetic.main.component_collapse_chose_photo.view.*
-import kotlinx.android.synthetic.main.component_collapse_floating_turn_left.view.*
+
 import java.io.File
 import java.lang.IllegalStateException
 
@@ -25,6 +29,9 @@ class CollapseChosePhoto( context: Context ,
 
     private lateinit var bitmap : Bitmap
     private lateinit var fab    : FloatingActionButton
+    private lateinit var listenerSuccess : ( it : ArrayList<AlbumFile> ) -> Unit
+
+    private val doubleClick = DoubleClick()
 
     init {
         LayoutInflater
@@ -34,9 +41,50 @@ class CollapseChosePhoto( context: Context ,
         setSettings()
     }
 
+    fun setListenerSuccessPhoto( listenerSuccess : ( it : ArrayList<AlbumFile> ) -> Unit) {
+        this.listenerSuccess = { listAlbumFile ->
+
+            val isTheFirstTimeThatUserChosePhoto = !userAlreadyChoseThePhoto()
+
+            UtilsLoaderPhoto
+                    .loadBitmapFromInternalPath( listAlbumFile[0].path )
+                    .doOnNext {
+
+                        bitmap = it
+
+                        decodeFile()
+                    }.subscribe {
+
+
+                        if( isTheFirstTimeThatUserChosePhoto ) {
+                            imageview.layoutParams.height = imageview.width
+                            imageview.layoutParams = imageview.layoutParams
+                        }
+
+                        imageview.setImageBitmap( bitmap )
+
+                        if( isTheFirstTimeThatUserChosePhoto ) {
+                            fab.visibility = VISIBLE
+                            txtheader.visibility = GONE
+                        }
+
+                        listenerSuccess( listAlbumFile )
+                    }
+        }
+
+
+    }
+
+
+
     private fun setSettings() {
         imageview.setOnClickListener { _ ->
-            IntentPhotoUtils.openGallery( getActivity() )
+
+            if( doubleClick.isSingleClick() ) {
+                //IntentPhotoUtils.openGallery( getActivity() )
+                CameraActivityFactory.startActivityPhoto(getActivity(), null, listenerSuccess)
+            }
+
         }
     }
 
@@ -73,6 +121,7 @@ class CollapseChosePhoto( context: Context ,
     }
 
 
+    @Deprecated("use now setListenerSuccessPhoto and doesn't call activity result ")
     override fun onActivtyResultPhotoGallery( data : Intent? , requestCode : Int ) {
 
         if( requestCode != IntentPhotoUtils.RESULT_CODE_GALLERY ||

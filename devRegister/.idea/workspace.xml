@@ -6,7 +6,9 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="BUGADO" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -49,14 +51,86 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="activity_register_developer.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register_developer.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilsLoaderPhoto.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/utils/UtilsLoaderPhoto.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+              <folding>
+                <element signature="e#43#410#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuxiliarPhoto.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/auxiliarPhoto-1.0.9.aar/57d77f6b25dbd8b90fec4a009edaa2ea/jars/classes.jar!/caiohenrique/auxphoto/AuxiliarPhoto.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="252" lean-forward="true" selection-start-line="252" selection-end-line="252" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollapseChosePhoto.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/components/CollapseChosePhoto.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="100" column="39" lean-forward="true" selection-start-line="100" selection-start-column="39" selection-end-line="100" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CameraActivityFactory.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/factory/CameraActivityFactory.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Camer</find>
+    </findStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -593,10 +667,6 @@
                 <option name="name" value="generateDebugBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="transformDexArchiveWithExternalLibsDexMergerForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Compiles the release kotlin." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileReleaseKotlin" />
@@ -719,6 +789,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="transformClassesWithMultidexlistForDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="generateDebugResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -785,10 +859,6 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="transformDexArchiveWithExternalLibsDexMergerForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="javaPreCompileDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -839,6 +909,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="preReleaseBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="transformClassesWithMultidexlistForRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -969,6 +1043,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="generateReleaseUnitTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="transformClassesWithMultidexlistForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1532,10 +1610,6 @@
                 <option name="name" value="generateDebugBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="transformDexArchiveWithExternalLibsDexMergerForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Compiles the release kotlin." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileReleaseKotlin" />
@@ -1629,6 +1703,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="transformClassesWithMultidexlistForDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateDebugResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1685,10 +1763,6 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="transformDexArchiveWithExternalLibsDexMergerForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="javaPreCompileDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1739,6 +1813,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="preReleaseBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="transformClassesWithMultidexlistForRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
@@ -1827,10 +1905,6 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="transformDexArchiveWithExternalLibsDexMergerForDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateDebugSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1856,6 +1930,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateReleaseUnitTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="transformClassesWithMultidexlistForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -3503,13 +3581,32 @@
         <option value="$PROJECT_DIR$/app/src/androidTest/java/com/systemtechnology/devregister/activities_robot/RegisterDeveloperRobot.kt" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/com/systemtechnology/devregister/activities_robot/RegisterDeveloperActivityTest.kt" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/com/systemtechnology/devregister/activities_robot/activities_test/RegisterDeveloperActivityTest.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/camera_activity/CameraActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/camera_activity/CameraPresenter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_camera.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/camera_activity/CameraActivity.kt" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/design/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/utils/UtilsLoaderPhoto.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/define_rules/adapter/RulesHolderAdapterPhoto.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/define_rules/RulesBaseActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/register_developer/RegisterDeveloperActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/utils/DoubleClick.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/utils/DoubleClick.kt" />
+        <option value="$PROJECT_DIR$/design/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/factory/CameraActivityFactory.kt" />
+        <option value="$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/components/CollapseChosePhoto.kt" />
+        <option value="$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/utils/UtilsLoaderPhoto.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1228" />
-    <option name="height" value="717" />
+    <option name="width" value="1069" />
+    <option name="height" value="716" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -3571,24 +3668,22 @@
             </path>
             <path>
               <item name="devRegister" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="devRegister" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="devregister" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="devRegister" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="activities_robot" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="design" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
               <item name="devRegister" type="1abcf292:AndroidViewProjectNode" />
               <item name="design" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="devRegister" type="1abcf292:AndroidViewProjectNode" />
+              <item name="design" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="design" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devRegister" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
@@ -3599,20 +3694,30 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="update_register_updating_title&#9;PSI&#9;JAVA://com.systemtechnology.devregister.R.string#update_register_updating_title&#10;activity_register_developer&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/res/layout/activity_register_developer.xml&#10;RegiDe&#9;null&#9;null&#10;register&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/androidTest/java/com/systemtechnology/devregister/UpdateOrRegisterActivityTestWithIntent.kt" />
+    <property name="DEBUGGABLE_DEVICE" value="motorola-moto_z3_play-0047859422" />
+    <property name="DEBUGGABLE_PROCESS" value="com.systemtechnology.devregister" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="decodeFile&#9;null&#9;null&#10;CameraFa&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/design/src/main/java/com/systemtechnology/design/factory/CameraActivityFactory.kt&#10;CameraA&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/design/src/main/java/com/systemtechnology/design/factory/CameraActivityFactory.kt&#10;Manifest&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/AndroidManifest.xml&#10;activity_regis&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/res/layout/activity_register_developer.xml&#10;MainA&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt&#10;CollapseChosePhoto&#9;null&#9;null&#10;RegisterD&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/register_developer/RegisterDeveloperActivity.kt&#10;CameraActivity&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/camera_activity/CameraActivity.kt&#10;MainAc&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt&#10;UtilsPho&#9;null&#9;null&#10;update_register_updating_title&#9;PSI&#9;JAVA://com.systemtechnology.devregister.R.string#update_register_updating_title&#10;activity_register_developer&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/main/res/layout/activity_register_developer.xml&#10;RegiDe&#9;null&#9;null&#10;register&#9;FILE&#9;file:///Users/user/Documents/DevelopersRegister/devRegister/app/src/androidTest/java/com/systemtechnology/devregister/UpdateOrRegisterActivityTestWithIntent.kt" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="device.picker.selection" value="Nexus_5X_API_28" />
+    <property name="device.picker.selection" value="0047859422" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.systemtechnology.design.utils" />
       <recent name="com.systemtechnology.devregister.activities_robot.activities_test" />
       <recent name="com.systemtechnology.devregister.activities_robot" />
       <recent name="teste" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.systemtechnology.devregister" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.systemtechnology.devregister.activities.camera_activity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/androidTest/java/com/systemtechnology/devregister" />
@@ -3631,7 +3736,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android Instrumented Tests.Tests in 'com.systemtechnology.devregister.activities_robot'">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="CpfCnpjValidateUnitTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -3706,7 +3811,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -3954,15 +4059,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_in_'com_systemtechnology_devregister' - 2019.01.03 at 11h 55m 37s.xml">
-      <configuration name="Tests in 'com.systemtechnology.devregister'" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Tests_in_'com_systemtechnology_devregister' - 2019.01.03 at 11h 56m 53s.xml">
-      <configuration name="Tests in 'com.systemtechnology.devregister'" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Tests_in_'com_systemtechnology_devregister' - 2019.01.03 at 13h 43m 47s.xml">
-      <configuration name="Tests in 'com.systemtechnology.devregister'" configurationId="AndroidTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="DeveloperValidateTest - 2019.01.03 at 13h 49m 57s.xml">
       <configuration name="DeveloperValidateTest" configurationId="AndroidJUnit" />
     </history-entry>
@@ -3984,27 +4080,47 @@
     <history-entry file="Tests_in_'com_systemtechnology_devregister_activities_robot' - 2019.01.03 at 14h 40m 05s.xml">
       <configuration name="Tests in 'com.systemtechnology.devregister.activities_robot'" configurationId="AndroidTestRunConfigurationType" />
     </history-entry>
+    <history-entry file="Tests_in_'com_systemtechnology_devregister_activities_robot' - 2019.01.03 at 15h 25m 08s.xml">
+      <configuration name="Tests in 'com.systemtechnology.devregister.activities_robot'" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Tests_in_'com_systemtechnology_devregister_activities_robot' - 2019.01.03 at 15h 25m 37s.xml">
+      <configuration name="Tests in 'com.systemtechnology.devregister.activities_robot'" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Tests_in_'com_systemtechnology_devregister_activities_robot' - 2019.01.03 at 15h 26m 02s.xml">
+      <configuration name="Tests in 'com.systemtechnology.devregister.activities_robot'" configurationId="AndroidTestRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1228" height="717" extended-state="0" />
+    <frame x="0" y="23" width="1069" height="717" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="12" weight="0.32903227" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32903227" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info id="Image Layers" order="7" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50080776" side_tool="true" weight="0.32965517" />
-      <window_info anchor="right" id="Preview" order="0" weight="0.32972524" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.012903226" />
+      <window_info anchor="right" id="Preview" order="0" weight="0.3296796" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.012903226" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32903227" />
-      <window_info anchor="bottom" id="Logcat" order="10" weight="0.32903227" />
+      <window_info anchor="bottom" id="Logcat" order="10" weight="0.4887097" />
       <window_info id="Captures" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.306914" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49919224" weight="0.32419354" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.35443038" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49919224" weight="0.32903227" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Gradle" order="6" weight="0.32956383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" />
@@ -4017,9 +4133,41 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3288926" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49919224" weight="0.32903227" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.012903226" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Android Profiler" order="12" weight="0.32903227" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Captures" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50080776" side_tool="true" weight="0.32965517" />
+      <window_info anchor="right" id="Preview" order="0" weight="0.3296796" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="10" visible="true" weight="0.4887097" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32903227" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.32956383" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35443038" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32903227" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3288926" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -4038,9 +4186,60 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/factory/CameraActivityFactory.kt</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/utils/UtilsLoaderPhoto.kt</url>
+          <line>57</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/utils/UtilsLoaderPhoto.kt</url>
+          <line>56</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/utils/UtilsLoaderPhoto.kt</url>
+          <line>46</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/utils/UtilsLoaderPhoto.kt</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/utils/UtilsLoaderPhoto.kt</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="23" />
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>it</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/systemtechnology/devregister/activities_robot/activities_test/RegisterDeveloperActivityTest.kt">
@@ -4159,34 +4358,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register_developer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="26" column="49" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="49" />
-          <folding>
-            <element signature="e#1079#1119#0" expanded="true" />
-            <element signature="e#2565#2609#0" expanded="true" />
-            <element signature="e#3552#3596#0" expanded="true" />
-            <element signature="e#4538#4573#0" expanded="true" />
-            <element signature="e#5526#5561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/systemtechnology/devregister/R.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="5946" column="28" selection-start-line="5946" selection-start-column="28" selection-end-line="5946" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/register_developer/RegisterDeveloperActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="116" column="51" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -4204,13 +4379,6 @@
           <folding>
             <element signature="e#59#614#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/systemtechnology/devregister/activities_robot/activities_test/MainActivityTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -4243,6 +4411,193 @@
           <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#75#427#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/systemtechnology/devregister/activities_robot/activities_test/MainActivityTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/camera_activity/CameraPresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+          <folding>
+            <element signature="e#69#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_camera.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/camera_activity/CameraActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="36" selection-start-line="36" selection-end-line="40" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/utils/UtilsLoaderPhoto.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <element signature="e#48#384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/utils/IntentPhotoUtils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/define_rules/adapter/RulesHolderAdapterPhoto.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#63#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/viewmodel/DeveloperViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding>
+            <element signature="e#52#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/define_rules/RulesBaseActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="112" column="28" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/register_developer/RegisterDeveloperActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="141" column="4" selection-start-line="141" selection-start-column="4" selection-end-line="141" selection-end-column="4" />
+          <folding>
+            <element signature="e#72#1444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/utils/DoubleClick.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/utils/DoubleClick.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/systemtechnology/devregister/activities/main_activity/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1136">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="e#67#1691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/auxiliarPhoto-1.0.9.aar/57d77f6b25dbd8b90fec4a009edaa2ea/jars/classes.jar!/caiohenrique/auxphoto/AuxiliarPhoto.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="252" lean-forward="true" selection-start-line="252" selection-end-line="252" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register_developer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/factory/CameraActivityFactory.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/components/CollapseChosePhoto.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="100" column="39" lean-forward="true" selection-start-line="100" selection-start-column="39" selection-end-line="100" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/src/main/java/com/systemtechnology/design/utils/UtilsLoaderPhoto.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding>
+            <element signature="e#43#410#0" expanded="true" />
           </folding>
         </state>
       </provider>

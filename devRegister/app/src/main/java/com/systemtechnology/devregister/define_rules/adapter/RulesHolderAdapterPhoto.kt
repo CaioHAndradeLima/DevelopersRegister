@@ -2,11 +2,7 @@ package com.systemtechnology.devregister.define_rules.adapter
 
 import android.view.View
 import android.widget.ImageView
-import com.systemtechnology.devregister.define_rules.RulesBaseActivity
-import com.systemtechnology.devregister.utils.UtilsLoaderPhoto
-import io.reactivex.Observable
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
+import com.systemtechnology.design.utils.UtilsLoaderPhoto
 
 abstract class RulesHolderAdapterPhoto(view: View) : RulesHolderAdapter(view) {
 

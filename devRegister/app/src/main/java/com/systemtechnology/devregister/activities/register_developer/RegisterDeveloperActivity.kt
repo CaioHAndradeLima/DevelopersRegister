@@ -2,7 +2,7 @@ package com.systemtechnology.devregister.activities.register_developer
 
 import android.content.Intent
 import android.graphics.Bitmap
-import android.location.Address
+
 import android.support.v4.content.LocalBroadcastManager
 import android.support.v7.widget.CardView
 import android.view.MenuItem
@@ -146,16 +146,13 @@ abstract class RegisterDeveloperActivityView : RulesBaseActivityBroadcasts(), Vi
                 )
         }
 
-        ccp.notifyUseFloatingButtonTurnLeft(
-            container
-        )
+        ccp
+            .notifyUseFloatingButtonTurnLeft( container)
+            .setListenerSuccessPhoto {
+
+            }
 
         ccp.getTolbar().title = getString(R.string.form_register_dev_title_toolbar)
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        ccp.onActivtyResultPhotoGallery( data , requestCode )
     }
 
     override fun getActions(): Array<String>? {
