@@ -87,7 +87,7 @@ class ActivityDevDetailsActivity : RulesBaseActivityBroadcasts() {
             Observable
                 .timer(2500, TimeUnit.MILLISECONDS)
                 .observeOn(AndroidSchedulers.mainThread())
-                .map { swipeRefresh?.isRefreshing = false }
+                .doOnNext { swipeRefresh?.isRefreshing = false }
                 .subscribe()
         }
 

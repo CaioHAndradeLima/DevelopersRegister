@@ -13,9 +13,8 @@ import com.systemtechnology.devregister.activities_robot.RegisterDeveloperRobot
 @RunWith(AndroidJUnit4::class)
 class RegisterDeveloperActivityTest {
 
-    @get :Rule
-    var rule : ActivityTestRule<RegisterDeveloperActivity> =
-                ActivityTestRule(RegisterDeveloperActivity::class.java)
+    @get:Rule
+    var rule = ActivityTestRule(RegisterDeveloperActivity::class.java)
 
 
     private val robot = RegisterDeveloperRobot()

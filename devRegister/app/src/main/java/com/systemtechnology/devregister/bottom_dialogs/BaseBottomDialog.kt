@@ -31,10 +31,11 @@ abstract class BaseBottomDialog : BottomSheetDialogFragment() ,
     override fun setupDialog(dialog: Dialog, style: Int) {
         super.setupDialog(dialog, style)
 
-        container = View.inflate(   context,
-                getResContentView() ,
-                null
-        )
+        container = View.inflate(
+                        context,
+                        getResContentView(),
+                    null
+                    )
 
         dialog.setContentView( container )
 

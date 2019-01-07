@@ -6,11 +6,12 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.Menu
 import android.view.MenuItem
+
 import com.systemtechnology.devregister.R
 import com.systemtechnology.devregister.activities.activity_developer_details_dev.ActivityDevDetailsPresenter
 import com.systemtechnology.devregister.activities.activity_developer_details_dev.bottom_sheet_dialog.ActvityDevOptionsBottomDialog
 import com.systemtechnology.devregister.activities.activity_developer_details_dev.bottom_sheet_dialog.FactoryBottomDialogEntity
-
+import com.systemtechnology.devregister.activities.activity_login.LoginActivity
 import com.systemtechnology.devregister.activities.main_activity.adapter.DevelopersAdapter
 import com.systemtechnology.devregister.activities.main_activity.adapter.DevelopersHolder
 import com.systemtechnology.devregister.activities.main_activity.adapter.NoneDevelopersYetAdapter
@@ -24,6 +25,7 @@ import com.systemtechnology.devregister.entity.DeveloperEntity
 import com.systemtechnology.devregister.helper_transition.TransitionHelper
 import java.lang.IllegalStateException
 import com.systemtechnology.devregister.entity.infix_methods.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : MainActivityView() ,
                      MainMethods {
@@ -157,11 +159,13 @@ abstract class MainActivityView : RulesBaseActivityBroadcasts() {
     }
 
     override fun getReferences() {
-        recyclerView = findViewById(R.id.recyclerview)
+        recyclerView = recyclerview
     }
 
     override fun setSettingsIfExists() {
+        startActivity( Intent( this , LoginActivity::class.java ) )
         recyclerView.layoutManager  = LinearLayoutManager( this )
+
     }
 
     protected fun changeAdapterRecyclerToNoneDevelopersYetAdapter() {

@@ -11,7 +11,7 @@ import com.systemtechnology.devregister.activities.main_activity.adapter.NoneDev
 import com.systemtechnology.devregister.model.ModelDeveloper
 import org.junit.Assert
 
-class MainActivityRobot {
+class MainActivityRobot : RobotTest() {
 
     fun testIsDisplayed() : MainActivityRobot {
         Espresso.onView(ViewMatchers.withId(R.id.recyclerview)).check(ViewAssertions.matches(ViewMatchers.isDisplayed()))

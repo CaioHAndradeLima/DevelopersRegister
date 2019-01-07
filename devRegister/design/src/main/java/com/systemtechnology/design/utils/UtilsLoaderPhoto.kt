@@ -1,8 +1,7 @@
 package com.systemtechnology.design.utils
 
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.util.Log
+
 import android.widget.ImageView
 import caiohenrique.auxphoto.AuxiliarPhoto
 import io.reactivex.Observable
@@ -10,7 +9,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import java.io.File
-import java.io.FileInputStream
+import java.lang.IllegalStateException
 
 object UtilsLoaderPhoto {
 
@@ -39,33 +38,19 @@ object UtilsLoaderPhoto {
     fun loadBitmapFromInternalPath( path : String ,
                                     auxPhoto : AuxiliarPhoto ) : Observable<Bitmap> {
 
-         return Observable
-                .just(path)
-                .map { File(it) }
-                .filter { it.exists() }
-                 .doOnNext {
-                     val filter = it.length() > SIZE_MAX
-                     if( filter ) {
-                         Observable.just( auxPhoto.modifyScaleOfFile( it , 270 ) )
-                     }
-                 }
-                .map { FileInputStream(it) }
-                .map { BitmapFactory.decodeStream(it) }
-        x
-    }
+        val file = File( path )
 
-    fun loadPhotoFromInternalPath(imageView: ImageView, path: String): Disposable {
-        return loadBitmapFromInternalPath( path )
+        if( !file.exists()  ) throw IllegalStateException()
+
+        return Observable
+                    .just( file )
                     .observeOn(AndroidSchedulers.mainThread())
-                    .subscribeOn(Schedulers.computation())
-                    .subscribe ({ imageView?.setImageBitmap(it) }) {
-                        it.printStackTrace()
-
-                    }
-
+                    .subscribeOn( Schedulers.computation() )
+                    .map { modifyScale( auxPhoto , it , 270 ) }
     }
 
-    const val ONE_MEGA = 1024000
-    const val SIZE_MAX = ONE_MEGA / 5
+    private fun modifyScale(auxPhoto : AuxiliarPhoto , file : File , scale : Int ) : Bitmap? {
+        return auxPhoto.modifyScaleOfFile( file , scale )
+    }
 
 }

@@ -5,7 +5,7 @@ object ConfigActionsBroadManager {
     /**
      * send by ActivityRegister
      *
-     * sent when was inserted new AtivityDevEntity or updated
+     * sent when was inserted new ActivityDevEntity or updated
      */
     const val ACTION_ACTIVITY_DEV = "ACTION_ACT_DEV"
 

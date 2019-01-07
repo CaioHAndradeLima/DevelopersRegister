@@ -4,10 +4,9 @@ import android.support.test.espresso.Espresso
 import android.support.test.espresso.action.ViewActions
 import android.support.test.espresso.assertion.ViewAssertions
 import android.support.test.espresso.matcher.ViewMatchers
-import android.widget.EditText
+
 import com.systemtechnology.devregister.R
 import org.hamcrest.core.AllOf
-import org.junit.Test
 
 class RegisterDeveloperRobot {
 

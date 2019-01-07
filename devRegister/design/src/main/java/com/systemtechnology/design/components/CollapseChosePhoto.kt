@@ -33,6 +33,10 @@ class CollapseChosePhoto( context: Context ,
 
     private val doubleClick = DoubleClick()
 
+    private val auxPhoto = caiohenrique
+                                .auxphoto
+                                .AuxiliarPhoto( context )
+
     init {
         LayoutInflater
             .from( context )
@@ -47,7 +51,7 @@ class CollapseChosePhoto( context: Context ,
             val isTheFirstTimeThatUserChosePhoto = !userAlreadyChoseThePhoto()
 
             UtilsLoaderPhoto
-                    .loadBitmapFromInternalPath( listAlbumFile[0].path )
+                    .loadBitmapFromInternalPath( listAlbumFile[0].path , auxPhoto )
                     .doOnNext {
 
                         bitmap = it
@@ -195,13 +199,13 @@ class CollapseChosePhoto( context: Context ,
         matrix.setRotate( imageview.rotation )
 
         return Bitmap.createBitmap(
-            bitmap,
-            0,
-            0,
-            bitmap.width,
-            bitmap.height,
-            matrix,
-            true
+                bitmap,
+                0,
+                0,
+                bitmap.width,
+                bitmap.height,
+                matrix,
+                true
         )
     }
 

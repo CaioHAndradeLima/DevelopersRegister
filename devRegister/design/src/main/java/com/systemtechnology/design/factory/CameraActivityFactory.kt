@@ -2,6 +2,8 @@ package com.systemtechnology.design.factory
 
 import android.app.Activity
 import android.widget.ImageView
+import caiohenrique.auxphoto.AuxiliarPhoto
+import com.bumptech.glide.Glide
 import com.systemtechnology.design.utils.UtilsLoaderPhoto
 import com.yanzhenjie.album.Album
 import com.yanzhenjie.album.AlbumConfig
@@ -16,26 +18,29 @@ object CameraActivityFactory {
                                   crossinline listenerSuccess : ( it : ArrayList<AlbumFile> ) -> Unit
                                         ) {
 
-        Album.initialize(AlbumConfig.newBuilder( ac )
-                .setAlbumLoader(MediaLoader())
-                .build())
+        Album.initialize(
+                AlbumConfig
+                    .newBuilder( ac )
+                    .setAlbumLoader(MediaLoader())
+                    .build()
+              )
 
         Album
-                .image( ac ) // Image selection.
-                .singleChoice()
-                .camera( true )
-                .columnCount( 2 )
-                //.checkedList(mAlbumFiles)
-                //.filterSize() // Filter the file size.
-                //.filterMimeType() // Filter file format.
-                .afterFilterVisibility( true ) // Show the filtered files, but they are not available.
-                .onResult {
-                    listenerSuccess( it )
-                }
-                .onCancel {
-                    listenerCancel?.invoke()
-                }
-                .start()
+            .image( ac ) // Image selection.
+            .singleChoice()
+            .camera( true )
+            .columnCount( 2 )
+            //.checkedList(mAlbumFiles)
+            //.filterSize() // Filter the file size.
+            //.filterMimeType() // Filter file format.
+            .afterFilterVisibility( true ) // Show the filtered files, but they are not available.
+            .onResult {
+                listenerSuccess( it )
+            }
+            .onCancel {
+                listenerCancel?.invoke()
+            }
+            .start()
     }
 
 }
@@ -48,7 +53,14 @@ class MediaLoader : AlbumLoader {
     }
 
     override fun load(imageView: ImageView, urlOrPath: String) {
-        UtilsLoaderPhoto.loadPhotoFromInternalPath( imageView , urlOrPath )
+        //its will recycler the memory
+        Glide
+            .with(imageView.context)
+            .load(urlOrPath)
+            //.error( R.drawable )
+            //.placeholder( R.drawable... )
+            .into(imageView)
+
     }
 }
 
