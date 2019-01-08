@@ -2,4 +2,6 @@
     <string name="app_name">design</string>
 
     <string name="component_chp_tap_message">Toque para inserir a imagem</string>
+    <string name="without_connection">Sem conexão</string>
+    <string name="without_connection_description">Verifique a conectividade</string>
 </resources>

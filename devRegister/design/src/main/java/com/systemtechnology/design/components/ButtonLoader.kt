@@ -2,17 +2,19 @@ package com.systemtechnology.design.components
 
 import android.app.Activity
 import android.content.Context
-import android.graphics.Typeface
 import android.support.constraint.ConstraintLayout
-import android.support.v4.content.res.ResourcesCompat
+import android.support.v4.content.ContextCompat
+
 import android.util.AttributeSet
 import android.view.View
 import android.widget.Button
 import com.getkeepsafe.taptargetview.TapTarget
 import com.getkeepsafe.taptargetview.TapTargetView
-import io.reactivex.Observable
-import io.reactivex.android.schedulers.AndroidSchedulers
-import java.util.concurrent.TimeUnit
+import com.systemtechnology.design.R
+import com.systemtechnology.design.factory.TapTargetFactory
+import com.systemtechnology.design.utils.DoubleClick
+import com.systemtechnology.design.utils.UtilsConnection
+
 
 class ButtonLoader : ConstraintLayout {
     constructor(context: Context) : super(context)
@@ -23,6 +25,11 @@ class ButtonLoader : ConstraintLayout {
 
     val button = Button( context )
     val view   = View( context )
+    private lateinit var target : TapTarget
+    var isRequiredValiateConnection = true
+
+
+    val doubleClick = DoubleClick()
 
     init {
 
@@ -30,29 +37,6 @@ class ButtonLoader : ConstraintLayout {
         addView( setConfigViewContainerAnimation() )
     }
 
-
-    val target : TapTarget = TapTarget.forView(
-        view,
-        "Enviando informações",
-        "Realizando login..."
-    )
-        // All options below are optional
-        //.outerCircleColor(android.R.color.holo_red_dark)      // Specify a color for the outer circle
-        .outerCircleAlpha(0.9f)            // Specify the alpha amount for the outer circle
-        .targetCircleColor(android.R.color.white)   // Specify a color for the target circle
-        .titleTextSize(25)                  // Specify the size (in sp) of the title text
-        .titleTextColor(android.R.color.white)      // Specify the color of the title text
-        .descriptionTextSize(20)            // Specify the size (in sp) of the description text
-        .descriptionTextColor(android.R.color.white)  // Specify the color of the description text
-        .textColor(android.R.color.white)            // Specify a color for both the title and description text
-        .textTypeface(Typeface.SANS_SERIF)  // Specify a typeface for the text
-        //.dimColor(android.R.color.black)            // If set, will dim behind the view with 30% opacity of the given color
-        .drawShadow(true)                   // Whether to draw a drop shadow or not
-        .cancelable(true)                  // Whether tapping outside the outer circle dismisses the view
-        //.tintTarget(true)                   // Whether to tint the target view's color
-        .transparentTarget(false)           // Specify whether the target is transparent (displays the content underneath)
-        //.icon(Drawable)                     // Specify a custom drawable to draw as the target
-        .targetRadius(60)
 
     private fun setConfigViewContainerAnimation() : View {
         val lpView = ConstraintLayout.LayoutParams(
@@ -80,32 +64,101 @@ class ButtonLoader : ConstraintLayout {
 
         button.layoutParams = lp
 
+        return button
+    }
+
+    inline fun setOnButtonClickListener(crossinline onListenerClick : (view : View) -> Unit ) {
         button.setOnClickListener {
 
-
-           val a = TapTargetView.showFor(
-                                    context as Activity, // `this` is an Activity
-                                    target
-                                )
+            if( doubleClick.isDoubleClick() ) return@setOnClickListener
 
 
-                    target
-                        .outerCircleColor(android.R.color.holo_red_light)      // Specify a color for the outer circle
-                        .targetCircleColor( android.R.color.white )
-                        .titleTextColor( android.R.color.black )      // Specify the color of the title text
-                        .descriptionTextColor( android.R.color.black )
-                        .icon( ResourcesCompat.getDrawable( resources , android.R.drawable.ic_dialog_alert, null) )
-                        .drawShadow( true )
+           if( isRequiredValiateConnection &&
+                    UtilsConnection.isNotConnected( context ) ) {
 
-                    a.dismiss( false )
-
-                    TapTargetView.showFor( context as Activity  , target )
+                showTargetErrorConnection(
+                    context.getString(R.string.without_connection) ,
+                    context.getString(R.string.without_connection_description)
+                )
+            } else {
+               onListenerClick( it )
+            }
 
         }
-        return button
 
     }
 
+    fun showTargetErrorConnection(title: String, description: String) {
+        target = TapTargetFactory.createErrorConnectionTarget( view , title , description )
+        showTargetView()
+    }
 
+    fun showTargetProgress(titleMsg : String , description : String?) {
+        target = TapTargetFactory.createSampleTarget( view , titleMsg  , description  )
+        showTargetView()
+    }
+
+    fun showTargetError( titleMsg : String , description : String? ) {
+        target = TapTargetFactory.createErrorTarget( view , titleMsg  , description  )
+
+        showTargetView()
+    }
+
+    fun showTargetView() {
+        TapTargetView.showFor(
+            context as Activity, // `this` is an Activity
+            target
+        )
+    }
+
+    fun setButtonBuild( bbf : ButtonBuildFactory ) : ButtonLoader{
+        button.text = bbf.title
+        button.setTextColor( bbf.titleColor )
+        button.setBackgroundColor( bbf.backgroundColor )
+        button.textSize = 23f
+        return this
+    }
+
+}
+
+
+
+class ButtonBuildFactory private constructor() {
+
+
+    var backgroundColor : Int = 0
+    var titleColor      : Int = 0
+
+    lateinit var title : String
+
+
+    companion object {
+        fun build() : ButtonBuildFactory {
+            return ButtonBuildFactory()
+        }
+
+        fun getDefaultFactory(context : Context) : ButtonBuildFactory {
+            return ButtonBuildFactory
+                        .build()
+                        .setColorBackground( ContextCompat.getColor( context , R.color.blue_strong ) )
+                        .setTitle( "Login" )
+                        .setTitleColor( ContextCompat.getColor( context , android.R.color.white ) )
+        }
+
+    }
+    fun setColorBackground(backgroundColor : Int) : ButtonBuildFactory {
+        this.backgroundColor = backgroundColor
+        return this
+    }
+
+    fun setTitleColor(titleColor : Int) : ButtonBuildFactory {
+        this.titleColor = titleColor
+        return this
+    }
+
+    fun setTitle(title : String): ButtonBuildFactory {
+        this.title = title
+        return this
+    }
 
 }

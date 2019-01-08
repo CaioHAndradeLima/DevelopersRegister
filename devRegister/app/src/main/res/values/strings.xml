@@ -63,5 +63,7 @@
     <string name="activity_register_activity_form_title_updating">Atualize a atividade</string>
     <string name="activity_register_activity_form_button_updating">Atualizar</string>
     <string name="activity_register_activity_form_title_delivered">Atividade finalizada</string>
+    <string name="activity_login_form_error_email_or_cpf">Email ou CPF inválidos</string>
+    <string name="activity_login_form_error_password">Digite uma senha válida</string>
 
 </resources>
